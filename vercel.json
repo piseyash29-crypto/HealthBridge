@@ -1,0 +1,12 @@
+
+{
+  "framework": null,
+  "buildCommand": "mkdir -p dist && cp -R public/. dist/",
+  "outputDirectory": "dist",
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/portal.html"
+    }
+  ]
+}
