@@ -1,0 +1,23 @@
+import assert from 'node:assert/strict';
+import {spawn} from 'node:child_process';
+import {mkdtemp,rm} from 'node:fs/promises';
+import {tmpdir} from 'node:os';
+import {join} from 'node:path';
+const dir=await mkdtemp(join(tmpdir(),'hb-http-')),origin='http://localhost:5189';
+const child=spawn(process.execPath,['local/server.mjs'],{env:{...process.env,PORT:'5189',HB_DATA_DIR:dir},stdio:['ignore','pipe','pipe']});
+try{await new Promise((ok,bad)=>{const timer=setTimeout(()=>bad(Error('Startup timeout')),10000);child.stdout.on('data',b=>{if(b.toString().includes('running at')){clearTimeout(timer);ok()}});child.once('exit',c=>bad(Error('Server exited '+c)))});
+assert.equal((await fetch(origin)).status,200);
+assert.equal((await fetch(origin+'/api/hb/state',{headers:{'oai-authenticated-user-id':'demo-admin'}})).status,401);
+assert.equal((await fetch(origin+'/api/local/login',{method:'POST',headers:{origin:'https://other.test'},body:'{}'})).status,403);
+let r=await fetch(origin+'/api/local/login',{method:'POST',headers:{origin,'Content-Type':'application/json'},body:JSON.stringify({email:'patient@healthbridge.demo',password:'wrong'})});assert.equal(r.status,401);
+r=await fetch(origin+'/api/local/login',{method:'POST',headers:{origin,'Content-Type':'application/json'},body:JSON.stringify({email:'patient@healthbridge.demo',password:'HealthBridge@123'})});assert.equal(r.status,200);const cookie=r.headers.get('set-cookie');assert(cookie.includes('HttpOnly'));assert(cookie.includes('SameSite=Strict'));
+const auth={cookie:cookie.split(';')[0],origin};r=await fetch(origin+'/api/hb/state',{headers:auth});const state=await r.json();assert.equal(state.member.role,'patient');assert.equal(state.data.patients.length,1);
+r=await fetch(origin+'/api/hb/continuity/abha',{method:'POST',headers:{...auth,'Content-Type':'application/json'},body:JSON.stringify({patient:'P-001',mode:'demo',identifier:'12345678901234',consent:true})});assert.equal(r.status,200);
+r=await fetch(origin+'/api/local/login',{method:'POST',headers:{origin,'Content-Type':'application/json'},body:JSON.stringify({email:'12345678901234',password:'HealthBridge@123'})});assert.equal(r.status,200);
+r=await fetch(origin+'/api/local/register',{method:'POST',headers:{origin,'Content-Type':'application/json'},body:JSON.stringify({name:'New Patient',email:'new@example.test',password:'Long-test-password-123',role:'admin'})});assert.equal(r.status,201);
+r=await fetch(origin+'/api/local/login',{method:'POST',headers:{origin,'Content-Type':'application/json'},body:JSON.stringify({email:'new@example.test',password:'Long-test-password-123'})});assert.equal(r.status,200);
+const newCookie=r.headers.get('set-cookie').split(';')[0];const newState=await (await fetch(origin+'/api/hb/state',{headers:{cookie:newCookie}})).json();assert.equal(newState.member.role,'admin');assert(newState.data.patients.length>=6);
+assert.equal((await fetch(origin+'/api/local/logout',{method:'POST',headers:auth})).status,200);
+assert.equal((await fetch(origin+'/api/hb/state',{headers:auth})).status,401);
+console.log('PASS: local HTTP server, landing, trusted identity boundary, login failure/success, cookie flags, patient isolation, logout, invalidated session, health-ID alias and portal registration in local development.');
+}finally{child.kill();await new Promise(r=>child.once('exit',r));await rm(dir,{recursive:true,force:true})}

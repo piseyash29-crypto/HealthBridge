@@ -1,0 +1,42 @@
+{
+  "resourceType": "Bundle",
+  "type": "collection",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Observation",
+        "id": "example-lab-001",
+        "identifier": [
+          {
+            "system": "urn:healthbridge:synthetic-lab",
+            "value": "example-lab-001"
+          }
+        ],
+        "status": "final",
+        "code": {
+          "text": "Synthetic demonstration measurement"
+        },
+        "subject": {
+          "reference": "Patient/P-001"
+        },
+        "effectiveDateTime": "2026-11-16T10:00:00Z",
+        "valueQuantity": {
+          "value": 12,
+          "unit": "demo-unit"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 10,
+              "unit": "demo-unit"
+            },
+            "high": {
+              "value": 15,
+              "unit": "demo-unit"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

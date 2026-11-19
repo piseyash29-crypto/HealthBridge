@@ -1,0 +1,2867 @@
+{
+  "doctors": [
+    [
+      "doctor-neuro",
+      "Dr. Anjali Deshpande",
+      "Neurology"
+    ],
+    [
+      "doctor-cardio",
+      "Dr. Sameer Kulkarni",
+      "Cardiology"
+    ],
+    [
+      "doctor-pulmo",
+      "Dr. Nisha Shah",
+      "Pulmonology"
+    ],
+    [
+      "doctor-surgery",
+      "Dr. Vikram Sinha",
+      "General Surgery"
+    ],
+    [
+      "doctor-medicine",
+      "Dr. Kavya Desai",
+      "Internal Medicine"
+    ],
+    [
+      "doctor-ortho",
+      "Dr. Ritesh Patil",
+      "Orthopedics"
+    ]
+  ],
+  "cases": [
+    {
+      "profile": {
+        "id": "P-007",
+        "name": "Ishita Kulkarni",
+        "age": 29,
+        "gender": "Female",
+        "condition": "Migraine",
+        "blood": "O+",
+        "phone": "Not recorded",
+        "email": "care.p-007@example.invalid",
+        "address": "Pune, Maharashtra",
+        "notes": "Prior visit 2026-08-21; current care pathway: Neurology",
+        "assignedDoctor": "doctor-neuro"
+      },
+      "episode": {
+        "id": "EP-P-007",
+        "patient": "P-007",
+        "stage": "Arrived",
+        "visitType": "Outpatient",
+        "arrivalAt": "2026-11-19T08:00:00+05:30",
+        "admittedAt": null,
+        "dischargedAt": null,
+        "doctorId": "doctor-neuro",
+        "department": "Neurology",
+        "ward": "\u2014",
+        "bed": "",
+        "notes": "Migraine; assessment and ongoing care documentation",
+        "priorVisitAt": "2026-08-21",
+        "medications": [
+          {
+            "name": "Paracetamol 500 mg",
+            "schedule": "When needed",
+            "instructions": "As recorded by treating clinician",
+            "status": "Active"
+          }
+        ],
+        "events": [
+          {
+            "at": "2026-08-21T10:30:00+05:30",
+            "title": "Previous consultation",
+            "detail": "Prior neurology assessment and follow-up review"
+          },
+          {
+            "at": "2026-11-19T08:00:00+05:30",
+            "title": "Arrival registered",
+            "detail": "Patient details confirmed at reception"
+          },
+          {
+            "at": "2026-11-19T16:00:00+05:30",
+            "title": "Clinical review",
+            "detail": "Neurology review; medication and investigations reconciled"
+          }
+        ],
+        "updatedAt": "2026-11-19T08:00:00+05:30",
+        "_source": "training"
+      },
+      "report": {
+        "id": "LAB-JRN-P-007",
+        "patient": "P-007",
+        "type": "Lab report",
+        "title": "Neurology clinical review and investigations",
+        "date": "2026-11-19",
+        "department": "Neurology",
+        "reference": "HB-LAB-007",
+        "doctor": "Dr. Anjali Deshpande",
+        "author": "HealthBridge Diagnostics",
+        "body": "Clinical presentation: Migraine.\nRecorded assessment: follow-up tests reviewed by care team.\nPrevious consultation: 2026-08-21.\nReview date: 2026-11-19.\nAssessment details: See linked encounter and treating physician notes.\nNo diagnosis generated from this document."
+      },
+      "prescription": {
+        "id": "RX-JRN-P-007",
+        "patient": "P-007",
+        "title": "Migraine \u2014 Medication schedule",
+        "type": "Prescription",
+        "date": "2026-11-19",
+        "doctor": "Dr. Anjali Deshpande",
+        "author": "Dr. Anjali Deshpande",
+        "department": "Neurology",
+        "medications": [
+          {
+            "name": "Paracetamol 500 mg",
+            "schedule": "When needed",
+            "instructions": "As recorded by treating clinician",
+            "status": "Active"
+          }
+        ],
+        "body": "Paracetamol 500 mg | When needed | As recorded by treating clinician\nReview medication reconciliation with treating physician."
+      },
+      "bill": {
+        "id": "INV-JRN-P-007",
+        "patient": "P-007",
+        "title": "Neurology care and investigations",
+        "amount": 850,
+        "status": "Paid",
+        "date": "2026-11-19"
+      },
+      "appointment": {
+        "id": "APT-JRN-P-007",
+        "patient": "P-007",
+        "doctor": "Dr. Anjali Deshpande",
+        "doctorId": "doctor-neuro",
+        "date": "2026-11-20",
+        "time": "09:00",
+        "type": "Consultation",
+        "status": "Scheduled",
+        "approval": "Confirmed",
+        "notes": "Neurology review for Migraine"
+      },
+      "priorAppointment": {
+        "id": "APT-PRIOR-P-007",
+        "patient": "P-007",
+        "doctor": "Dr. Anjali Deshpande",
+        "doctorId": "doctor-neuro",
+        "date": "2026-08-21",
+        "time": "10:30",
+        "type": "Prior consultation",
+        "status": "Completed",
+        "approval": "Confirmed",
+        "notes": "Clinical history reviewed for Migraine"
+      },
+      "priorReport": {
+        "id": "LAB-PRIOR-P-007",
+        "patient": "P-007",
+        "type": "Lab report",
+        "title": "Previous Neurology assessment",
+        "date": "2026-08-21",
+        "department": "Neurology",
+        "reference": "HB-PR-007",
+        "doctor": "Dr. Anjali Deshpande",
+        "author": "HealthBridge Diagnostics",
+        "body": "Review date: 2026-08-21\nClinical history: Migraine\nSymptoms and follow-up concerns recorded.\nFurther monitoring planned at next visit."
+      },
+      "priorPrescription": {
+        "id": "RX-PRIOR-P-007",
+        "patient": "P-007",
+        "title": "Previous Neurology treatment review",
+        "type": "Prescription",
+        "date": "2026-08-21",
+        "doctor": "Dr. Anjali Deshpande",
+        "author": "Dr. Anjali Deshpande",
+        "department": "Neurology",
+        "medications": [
+          {
+            "name": "Paracetamol 500 mg",
+            "schedule": "When needed",
+            "instructions": "As recorded by treating clinician",
+            "status": "Active"
+          }
+        ],
+        "body": "Previous visit: 2026-08-21\nCurrent medicines discussed and reconciled.\nNo new prescription authorized by historical entry."
+      }
+    },
+    {
+      "profile": {
+        "id": "P-008",
+        "name": "Kabir Sethi",
+        "age": 64,
+        "gender": "Male",
+        "condition": "Acute coronary syndrome",
+        "blood": "B+",
+        "phone": "Not recorded",
+        "email": "care.p-008@example.invalid",
+        "address": "Pune, Maharashtra",
+        "notes": "Prior visit 2026-08-18; current care pathway: Cardiology",
+        "assignedDoctor": "doctor-cardio"
+      },
+      "episode": {
+        "id": "EP-P-008",
+        "patient": "P-008",
+        "stage": "ICU",
+        "visitType": "Emergency",
+        "arrivalAt": "2026-11-17T09:15:00+05:30",
+        "admittedAt": "2026-11-17T11:00:00+05:30",
+        "dischargedAt": null,
+        "doctorId": "doctor-cardio",
+        "department": "Cardiology",
+        "ward": "ICU",
+        "bed": "ICU-12",
+        "notes": "Acute coronary syndrome; assessment and ongoing care documentation",
+        "priorVisitAt": "2026-08-18",
+        "medications": [
+          {
+            "name": "Aspirin",
+            "schedule": "Morning",
+            "instructions": "See signed prescription",
+            "status": "Active"
+          },
+          {
+            "name": "Atorvastatin",
+            "schedule": "Night",
+            "instructions": "See signed prescription",
+            "status": "Active"
+          }
+        ],
+        "events": [
+          {
+            "at": "2026-08-18T10:30:00+05:30",
+            "title": "Previous consultation",
+            "detail": "Prior cardiology assessment and follow-up review"
+          },
+          {
+            "at": "2026-11-17T09:15:00+05:30",
+            "title": "Arrival registered",
+            "detail": "Patient details confirmed at reception"
+          },
+          {
+            "at": "2026-11-17T11:00:00+05:30",
+            "title": "Admitted to ICU",
+            "detail": "Care team allocation and initial assessment completed"
+          },
+          {
+            "at": "2026-11-17T16:00:00+05:30",
+            "title": "Clinical review",
+            "detail": "Cardiology review; medication and investigations reconciled"
+          }
+        ],
+        "updatedAt": "2026-11-17T09:15:00+05:30",
+        "_source": "training"
+      },
+      "report": {
+        "id": "LAB-JRN-P-008",
+        "patient": "P-008",
+        "type": "Lab report",
+        "title": "Cardiology clinical review and investigations",
+        "date": "2026-11-17",
+        "department": "Cardiology",
+        "reference": "HB-LAB-008",
+        "doctor": "Dr. Sameer Kulkarni",
+        "author": "HealthBridge Diagnostics",
+        "body": "Clinical presentation: Acute coronary syndrome.\nRecorded assessment: follow-up tests reviewed by care team.\nPrevious consultation: 2026-08-18.\nReview date: 2026-11-17.\nAssessment details: See linked encounter and treating physician notes.\nNo diagnosis generated from this document."
+      },
+      "prescription": {
+        "id": "RX-JRN-P-008",
+        "patient": "P-008",
+        "title": "Acute coronary syndrome \u2014 Medication schedule",
+        "type": "Prescription",
+        "date": "2026-11-17",
+        "doctor": "Dr. Sameer Kulkarni",
+        "author": "Dr. Sameer Kulkarni",
+        "department": "Cardiology",
+        "medications": [
+          {
+            "name": "Aspirin",
+            "schedule": "Morning",
+            "instructions": "See signed prescription",
+            "status": "Active"
+          },
+          {
+            "name": "Atorvastatin",
+            "schedule": "Night",
+            "instructions": "See signed prescription",
+            "status": "Active"
+          }
+        ],
+        "body": "Aspirin | Morning | See signed prescription\nAtorvastatin | Night | See signed prescription\nReview medication reconciliation with treating physician."
+      },
+      "bill": {
+        "id": "INV-JRN-P-008",
+        "patient": "P-008",
+        "title": "Cardiology care and investigations",
+        "amount": 4770,
+        "status": "Unpaid",
+        "date": "2026-11-17"
+      },
+      "appointment": {
+        "id": "APT-JRN-P-008",
+        "patient": "P-008",
+        "doctor": "Dr. Sameer Kulkarni",
+        "doctorId": "doctor-cardio",
+        "date": "2026-11-21",
+        "time": "10:15",
+        "type": "Follow-up",
+        "status": "Scheduled",
+        "approval": "Confirmed",
+        "notes": "Cardiology review for Acute coronary syndrome"
+      },
+      "priorAppointment": {
+        "id": "APT-PRIOR-P-008",
+        "patient": "P-008",
+        "doctor": "Dr. Sameer Kulkarni",
+        "doctorId": "doctor-cardio",
+        "date": "2026-08-18",
+        "time": "11:30",
+        "type": "Prior consultation",
+        "status": "Completed",
+        "approval": "Confirmed",
+        "notes": "Clinical history reviewed for Acute coronary syndrome"
+      },
+      "priorReport": {
+        "id": "LAB-PRIOR-P-008",
+        "patient": "P-008",
+        "type": "Lab report",
+        "title": "Previous Cardiology assessment",
+        "date": "2026-08-18",
+        "department": "Cardiology",
+        "reference": "HB-PR-008",
+        "doctor": "Dr. Sameer Kulkarni",
+        "author": "HealthBridge Diagnostics",
+        "body": "Review date: 2026-08-18\nClinical history: Acute coronary syndrome\nSymptoms and follow-up concerns recorded.\nFurther monitoring planned at next visit."
+      },
+      "priorPrescription": {
+        "id": "RX-PRIOR-P-008",
+        "patient": "P-008",
+        "title": "Previous Cardiology treatment review",
+        "type": "Prescription",
+        "date": "2026-08-18",
+        "doctor": "Dr. Sameer Kulkarni",
+        "author": "Dr. Sameer Kulkarni",
+        "department": "Cardiology",
+        "medications": [
+          {
+            "name": "Aspirin",
+            "schedule": "Morning",
+            "instructions": "See signed prescription",
+            "status": "Active"
+          },
+          {
+            "name": "Atorvastatin",
+            "schedule": "Night",
+            "instructions": "See signed prescription",
+            "status": "Active"
+          }
+        ],
+        "body": "Previous visit: 2026-08-18\nCurrent medicines discussed and reconciled.\nNo new prescription authorized by historical entry."
+      }
+    },
+    {
+      "profile": {
+        "id": "P-009",
+        "name": "Maya Fernandes",
+        "age": 48,
+        "gender": "Female",
+        "condition": "Pneumonia",
+        "blood": "A+",
+        "phone": "Not recorded",
+        "email": "care.p-009@example.invalid",
+        "address": "Pune, Maharashtra",
+        "notes": "Prior visit 2026-08-15; current care pathway: Pulmonology",
+        "assignedDoctor": "doctor-pulmo"
+      },
+      "episode": {
+        "id": "EP-P-009",
+        "patient": "P-009",
+        "stage": "Admitted",
+        "visitType": "Inpatient",
+        "arrivalAt": "2026-11-16T10:30:00+05:30",
+        "admittedAt": "2026-11-16T12:00:00+05:30",
+        "dischargedAt": null,
+        "doctorId": "doctor-pulmo",
+        "department": "Pulmonology",
+        "ward": "General ward",
+        "bed": "WARD-23",
+        "notes": "Pneumonia; assessment and ongoing care documentation",
+        "priorVisitAt": "2026-08-15",
+        "medications": [
+          {
+            "name": "Antibiotic course",
+            "schedule": "Morning / Evening",
+            "instructions": "Follow verified order",
+            "status": "Active"
+          }
+        ],
+        "events": [
+          {
+            "at": "2026-08-15T10:30:00+05:30",
+            "title": "Previous consultation",
+            "detail": "Prior pulmonology assessment and follow-up review"
+          },
+          {
+            "at": "2026-11-16T10:30:00+05:30",
+            "title": "Arrival registered",
+            "detail": "Patient details confirmed at reception"
+          },
+          {
+            "at": "2026-11-16T12:00:00+05:30",
+            "title": "Admitted to hospital",
+            "detail": "Care team allocation and initial assessment completed"
+          },
+          {
+            "at": "2026-11-16T16:00:00+05:30",
+            "title": "Clinical review",
+            "detail": "Pulmonology review; medication and investigations reconciled"
+          }
+        ],
+        "updatedAt": "2026-11-16T10:30:00+05:30",
+        "_source": "training"
+      },
+      "report": {
+        "id": "LAB-JRN-P-009",
+        "patient": "P-009",
+        "type": "Lab report",
+        "title": "Pulmonology clinical review and investigations",
+        "date": "2026-11-16",
+        "department": "Pulmonology",
+        "reference": "HB-LAB-009",
+        "doctor": "Dr. Nisha Shah",
+        "author": "HealthBridge Diagnostics",
+        "body": "Clinical presentation: Pneumonia.\nRecorded assessment: follow-up tests reviewed by care team.\nPrevious consultation: 2026-08-15.\nReview date: 2026-11-16.\nAssessment details: See linked encounter and treating physician notes.\nNo diagnosis generated from this document."
+      },
+      "prescription": {
+        "id": "RX-JRN-P-009",
+        "patient": "P-009",
+        "title": "Pneumonia \u2014 Medication schedule",
+        "type": "Prescription",
+        "date": "2026-11-16",
+        "doctor": "Dr. Nisha Shah",
+        "author": "Dr. Nisha Shah",
+        "department": "Pulmonology",
+        "medications": [
+          {
+            "name": "Antibiotic course",
+            "schedule": "Morning / Evening",
+            "instructions": "Follow verified order",
+            "status": "Active"
+          }
+        ],
+        "body": "Antibiotic course | Morning / Evening | Follow verified order\nReview medication reconciliation with treating physician."
+      },
+      "bill": {
+        "id": "INV-JRN-P-009",
+        "patient": "P-009",
+        "title": "Pulmonology care and investigations",
+        "amount": 5090,
+        "status": "Unpaid",
+        "date": "2026-11-16"
+      },
+      "appointment": {
+        "id": "APT-JRN-P-009",
+        "patient": "P-009",
+        "doctor": "Dr. Nisha Shah",
+        "doctorId": "doctor-pulmo",
+        "date": "2026-11-22",
+        "time": "11:30",
+        "type": "Follow-up",
+        "status": "Scheduled",
+        "approval": "Confirmed",
+        "notes": "Pulmonology review for Pneumonia"
+      },
+      "priorAppointment": {
+        "id": "APT-PRIOR-P-009",
+        "patient": "P-009",
+        "doctor": "Dr. Nisha Shah",
+        "doctorId": "doctor-pulmo",
+        "date": "2026-08-15",
+        "time": "12:30",
+        "type": "Prior consultation",
+        "status": "Completed",
+        "approval": "Confirmed",
+        "notes": "Clinical history reviewed for Pneumonia"
+      },
+      "priorReport": {
+        "id": "LAB-PRIOR-P-009",
+        "patient": "P-009",
+        "type": "Lab report",
+        "title": "Previous Pulmonology assessment",
+        "date": "2026-08-15",
+        "department": "Pulmonology",
+        "reference": "HB-PR-009",
+        "doctor": "Dr. Nisha Shah",
+        "author": "HealthBridge Diagnostics",
+        "body": "Review date: 2026-08-15\nClinical history: Pneumonia\nSymptoms and follow-up concerns recorded.\nFurther monitoring planned at next visit."
+      },
+      "priorPrescription": {
+        "id": "RX-PRIOR-P-009",
+        "patient": "P-009",
+        "title": "Previous Pulmonology treatment review",
+        "type": "Prescription",
+        "date": "2026-08-15",
+        "doctor": "Dr. Nisha Shah",
+        "author": "Dr. Nisha Shah",
+        "department": "Pulmonology",
+        "medications": [
+          {
+            "name": "Antibiotic course",
+            "schedule": "Morning / Evening",
+            "instructions": "Follow verified order",
+            "status": "Active"
+          }
+        ],
+        "body": "Previous visit: 2026-08-15\nCurrent medicines discussed and reconciled.\nNo new prescription authorized by historical entry."
+      }
+    },
+    {
+      "profile": {
+        "id": "P-010",
+        "name": "Dev Nair",
+        "age": 39,
+        "gender": "Male",
+        "condition": "Appendectomy recovery",
+        "blood": "AB+",
+        "phone": "Not recorded",
+        "email": "care.p-010@example.invalid",
+        "address": "Pune, Maharashtra",
+        "notes": "Prior visit 2026-08-12; current care pathway: Surgery",
+        "assignedDoctor": "doctor-surgery"
+      },
+      "episode": {
+        "id": "EP-P-010",
+        "patient": "P-010",
+        "stage": "Discharged",
+        "visitType": "Inpatient",
+        "arrivalAt": "2026-11-15T11:45:00+05:30",
+        "admittedAt": "2026-11-15T13:00:00+05:30",
+        "dischargedAt": "2026-11-18T15:45:00+05:30",
+        "doctorId": "doctor-surgery",
+        "department": "Surgery",
+        "ward": "\u2014",
+        "bed": "",
+        "notes": "Appendectomy recovery; assessment and ongoing care documentation",
+        "priorVisitAt": "2026-08-12",
+        "medications": [
+          {
+            "name": "Post-operative analgesic",
+            "schedule": "Morning / Evening",
+            "instructions": "Per discharge order",
+            "status": "Completed"
+          }
+        ],
+        "events": [
+          {
+            "at": "2026-08-12T10:30:00+05:30",
+            "title": "Previous consultation",
+            "detail": "Prior surgery assessment and follow-up review"
+          },
+          {
+            "at": "2026-11-15T11:45:00+05:30",
+            "title": "Arrival registered",
+            "detail": "Patient details confirmed at reception"
+          },
+          {
+            "at": "2026-11-15T13:00:00+05:30",
+            "title": "Admitted to hospital",
+            "detail": "Care team allocation and initial assessment completed"
+          },
+          {
+            "at": "2026-11-15T16:00:00+05:30",
+            "title": "Clinical review",
+            "detail": "Surgery review; medication and investigations reconciled"
+          },
+          {
+            "at": "2026-11-18T15:45:00+05:30",
+            "title": "Discharged",
+            "detail": "Discharge plan issued; follow-up advised"
+          }
+        ],
+        "updatedAt": "2026-11-15T11:45:00+05:30",
+        "_source": "training"
+      },
+      "report": {
+        "id": "LAB-JRN-P-010",
+        "patient": "P-010",
+        "type": "Lab report",
+        "title": "Surgery clinical review and investigations",
+        "date": "2026-11-15",
+        "department": "Surgery",
+        "reference": "HB-LAB-010",
+        "doctor": "Dr. Vikram Sinha",
+        "author": "HealthBridge Diagnostics",
+        "body": "Clinical presentation: Appendectomy recovery.\nRecorded assessment: follow-up tests reviewed by care team.\nPrevious consultation: 2026-08-12.\nReview date: 2026-11-15.\nAssessment details: See linked encounter and treating physician notes.\nNo diagnosis generated from this document."
+      },
+      "prescription": {
+        "id": "RX-JRN-P-010",
+        "patient": "P-010",
+        "title": "Appendectomy recovery \u2014 Medication schedule",
+        "type": "Prescription",
+        "date": "2026-11-15",
+        "doctor": "Dr. Vikram Sinha",
+        "author": "Dr. Vikram Sinha",
+        "department": "Surgery",
+        "medications": [
+          {
+            "name": "Post-operative analgesic",
+            "schedule": "Morning / Evening",
+            "instructions": "Per discharge order",
+            "status": "Completed"
+          }
+        ],
+        "body": "Post-operative analgesic | Morning / Evening | Per discharge order\nReview medication reconciliation with treating physician."
+      },
+      "bill": {
+        "id": "INV-JRN-P-010",
+        "patient": "P-010",
+        "title": "Surgery care and investigations",
+        "amount": 1810,
+        "status": "Paid",
+        "date": "2026-11-15"
+      },
+      "appointment": {
+        "id": "APT-JRN-P-010",
+        "patient": "P-010",
+        "doctor": "Dr. Vikram Sinha",
+        "doctorId": "doctor-surgery",
+        "date": "2026-11-15",
+        "time": "12:45",
+        "type": "Follow-up",
+        "status": "Completed",
+        "approval": "Confirmed",
+        "notes": "Surgery review for Appendectomy recovery"
+      },
+      "priorAppointment": {
+        "id": "APT-PRIOR-P-010",
+        "patient": "P-010",
+        "doctor": "Dr. Vikram Sinha",
+        "doctorId": "doctor-surgery",
+        "date": "2026-08-12",
+        "time": "13:30",
+        "type": "Prior consultation",
+        "status": "Completed",
+        "approval": "Confirmed",
+        "notes": "Clinical history reviewed for Appendectomy recovery"
+      },
+      "priorReport": {
+        "id": "LAB-PRIOR-P-010",
+        "patient": "P-010",
+        "type": "Lab report",
+        "title": "Previous Surgery assessment",
+        "date": "2026-08-12",
+        "department": "Surgery",
+        "reference": "HB-PR-010",
+        "doctor": "Dr. Vikram Sinha",
+        "author": "HealthBridge Diagnostics",
+        "body": "Review date: 2026-08-12\nClinical history: Appendectomy recovery\nSymptoms and follow-up concerns recorded.\nFurther monitoring planned at next visit."
+      },
+      "priorPrescription": {
+        "id": "RX-PRIOR-P-010",
+        "patient": "P-010",
+        "title": "Previous Surgery treatment review",
+        "type": "Prescription",
+        "date": "2026-08-12",
+        "doctor": "Dr. Vikram Sinha",
+        "author": "Dr. Vikram Sinha",
+        "department": "Surgery",
+        "medications": [
+          {
+            "name": "Post-operative analgesic",
+            "schedule": "Morning / Evening",
+            "instructions": "Per discharge order",
+            "status": "Completed"
+          }
+        ],
+        "body": "Previous visit: 2026-08-12\nCurrent medicines discussed and reconciled.\nNo new prescription authorized by historical entry."
+      }
+    },
+    {
+      "profile": {
+        "id": "P-011",
+        "name": "Tara Bhosale",
+        "age": 72,
+        "gender": "Female",
+        "condition": "Hip fracture",
+        "blood": "O+",
+        "phone": "Not recorded",
+        "email": "care.p-011@example.invalid",
+        "address": "Pune, Maharashtra",
+        "notes": "Prior visit 2026-08-09; current care pathway: Orthopedics",
+        "assignedDoctor": "doctor-ortho"
+      },
+      "episode": {
+        "id": "EP-P-011",
+        "patient": "P-011",
+        "stage": "Admitted",
+        "visitType": "Inpatient",
+        "arrivalAt": "2026-11-14T12:00:00+05:30",
+        "admittedAt": "2026-11-14T14:00:00+05:30",
+        "dischargedAt": null,
+        "doctorId": "doctor-ortho",
+        "department": "Orthopedics",
+        "ward": "General ward",
+        "bed": "WARD-25",
+        "notes": "Hip fracture; assessment and ongoing care documentation",
+        "priorVisitAt": "2026-08-09",
+        "medications": [
+          {
+            "name": "Pain management",
+            "schedule": "Morning / Night",
+            "instructions": "Per medication chart",
+            "status": "Active"
+          }
+        ],
+        "events": [
+          {
+            "at": "2026-08-09T10:30:00+05:30",
+            "title": "Previous consultation",
+            "detail": "Prior orthopedics assessment and follow-up review"
+          },
+          {
+            "at": "2026-11-14T12:00:00+05:30",
+            "title": "Arrival registered",
+            "detail": "Patient details confirmed at reception"
+          },
+          {
+            "at": "2026-11-14T14:00:00+05:30",
+            "title": "Admitted to hospital",
+            "detail": "Care team allocation and initial assessment completed"
+          },
+          {
+            "at": "2026-11-14T16:00:00+05:30",
+            "title": "Clinical review",
+            "detail": "Orthopedics review; medication and investigations reconciled"
+          }
+        ],
+        "updatedAt": "2026-11-14T12:00:00+05:30",
+        "_source": "training"
+      },
+      "report": {
+        "id": "LAB-JRN-P-011",
+        "patient": "P-011",
+        "type": "Lab report",
+        "title": "Orthopedics clinical review and investigations",
+        "date": "2026-11-14",
+        "department": "Orthopedics",
+        "reference": "HB-LAB-011",
+        "doctor": "Dr. Ritesh Patil",
+        "author": "HealthBridge Diagnostics",
+        "body": "Clinical presentation: Hip fracture.\nRecorded assessment: follow-up tests reviewed by care team.\nPrevious consultation: 2026-08-09.\nReview date: 2026-11-14.\nAssessment details: See linked encounter and treating physician notes.\nNo diagnosis generated from this document."
+      },
+      "prescription": {
+        "id": "RX-JRN-P-011",
+        "patient": "P-011",
+        "title": "Hip fracture \u2014 Medication schedule",
+        "type": "Prescription",
+        "date": "2026-11-14",
+        "doctor": "Dr. Ritesh Patil",
+        "author": "Dr. Ritesh Patil",
+        "department": "Orthopedics",
+        "medications": [
+          {
+            "name": "Pain management",
+            "schedule": "Morning / Night",
+            "instructions": "Per medication chart",
+            "status": "Active"
+          }
+        ],
+        "body": "Pain management | Morning / Night | Per medication chart\nReview medication reconciliation with treating physician."
+      },
+      "bill": {
+        "id": "INV-JRN-P-011",
+        "patient": "P-011",
+        "title": "Orthopedics care and investigations",
+        "amount": 5730,
+        "status": "Unpaid",
+        "date": "2026-11-14"
+      },
+      "appointment": {
+        "id": "APT-JRN-P-011",
+        "patient": "P-011",
+        "doctor": "Dr. Ritesh Patil",
+        "doctorId": "doctor-ortho",
+        "date": "2026-11-24",
+        "time": "13:00",
+        "type": "Follow-up",
+        "status": "Scheduled",
+        "approval": "Confirmed",
+        "notes": "Orthopedics review for Hip fracture"
+      },
+      "priorAppointment": {
+        "id": "APT-PRIOR-P-011",
+        "patient": "P-011",
+        "doctor": "Dr. Ritesh Patil",
+        "doctorId": "doctor-ortho",
+        "date": "2026-08-09",
+        "time": "14:30",
+        "type": "Prior consultation",
+        "status": "Completed",
+        "approval": "Confirmed",
+        "notes": "Clinical history reviewed for Hip fracture"
+      },
+      "priorReport": {
+        "id": "LAB-PRIOR-P-011",
+        "patient": "P-011",
+        "type": "Lab report",
+        "title": "Previous Orthopedics assessment",
+        "date": "2026-08-09",
+        "department": "Orthopedics",
+        "reference": "HB-PR-011",
+        "doctor": "Dr. Ritesh Patil",
+        "author": "HealthBridge Diagnostics",
+        "body": "Review date: 2026-08-09\nClinical history: Hip fracture\nSymptoms and follow-up concerns recorded.\nFurther monitoring planned at next visit."
+      },
+      "priorPrescription": {
+        "id": "RX-PRIOR-P-011",
+        "patient": "P-011",
+        "title": "Previous Orthopedics treatment review",
+        "type": "Prescription",
+        "date": "2026-08-09",
+        "doctor": "Dr. Ritesh Patil",
+        "author": "Dr. Ritesh Patil",
+        "department": "Orthopedics",
+        "medications": [
+          {
+            "name": "Pain management",
+            "schedule": "Morning / Night",
+            "instructions": "Per medication chart",
+            "status": "Active"
+          }
+        ],
+        "body": "Previous visit: 2026-08-09\nCurrent medicines discussed and reconciled.\nNo new prescription authorized by historical entry."
+      }
+    },
+    {
+      "profile": {
+        "id": "P-012",
+        "name": "Sameer Chawla",
+        "age": 52,
+        "gender": "Male",
+        "condition": "Type 2 diabetes",
+        "blood": "B+",
+        "phone": "Not recorded",
+        "email": "care.p-012@example.invalid",
+        "address": "Pune, Maharashtra",
+        "notes": "Prior visit 2026-08-06; current care pathway: Endocrinology",
+        "assignedDoctor": "demo-doctor"
+      },
+      "episode": {
+        "id": "EP-P-012",
+        "patient": "P-012",
+        "stage": "Discharged",
+        "visitType": "Inpatient",
+        "arrivalAt": "2026-11-18T13:15:00+05:30",
+        "admittedAt": "2026-11-18T15:00:00+05:30",
+        "dischargedAt": "2026-11-18T15:45:00+05:30",
+        "doctorId": "demo-doctor",
+        "department": "Endocrinology",
+        "ward": "\u2014",
+        "bed": "",
+        "notes": "Type 2 diabetes; assessment and ongoing care documentation",
+        "priorVisitAt": "2026-08-06",
+        "medications": [
+          {
+            "name": "Metformin",
+            "schedule": "Morning / Evening",
+            "instructions": "With meals per existing prescription",
+            "status": "Completed"
+          }
+        ],
+        "events": [
+          {
+            "at": "2026-08-06T10:30:00+05:30",
+            "title": "Previous consultation",
+            "detail": "Prior endocrinology assessment and follow-up review"
+          },
+          {
+            "at": "2026-11-18T13:15:00+05:30",
+            "title": "Arrival registered",
+            "detail": "Patient details confirmed at reception"
+          },
+          {
+            "at": "2026-11-18T15:00:00+05:30",
+            "title": "Admitted to hospital",
+            "detail": "Care team allocation and initial assessment completed"
+          },
+          {
+            "at": "2026-11-18T16:00:00+05:30",
+            "title": "Clinical review",
+            "detail": "Endocrinology review; medication and investigations reconciled"
+          },
+          {
+            "at": "2026-11-18T15:45:00+05:30",
+            "title": "Discharged",
+            "detail": "Discharge plan issued; follow-up advised"
+          }
+        ],
+        "updatedAt": "2026-11-18T13:15:00+05:30",
+        "_source": "training"
+      },
+      "report": {
+        "id": "LAB-JRN-P-012",
+        "patient": "P-012",
+        "type": "Lab report",
+        "title": "Endocrinology clinical review and investigations",
+        "date": "2026-11-18",
+        "department": "Endocrinology",
+        "reference": "HB-LAB-012",
+        "doctor": "Dr. Rahul Sharma",
+        "author": "HealthBridge Diagnostics",
+        "body": "Clinical presentation: Type 2 diabetes.\nRecorded assessment: follow-up tests reviewed by care team.\nPrevious consultation: 2026-08-06.\nReview date: 2026-11-18.\nAssessment details: See linked encounter and treating physician notes.\nNo diagnosis generated from this document."
+      },
+      "prescription": {
+        "id": "RX-JRN-P-012",
+        "patient": "P-012",
+        "title": "Type 2 diabetes \u2014 Medication schedule",
+        "type": "Prescription",
+        "date": "2026-11-18",
+        "doctor": "Dr. Rahul Sharma",
+        "author": "Dr. Rahul Sharma",
+        "department": "Endocrinology",
+        "medications": [
+          {
+            "name": "Metformin",
+            "schedule": "Morning / Evening",
+            "instructions": "With meals per existing prescription",
+            "status": "Completed"
+          }
+        ],
+        "body": "Metformin | Morning / Evening | With meals per existing prescription\nReview medication reconciliation with treating physician."
+      },
+      "bill": {
+        "id": "INV-JRN-P-012",
+        "patient": "P-012",
+        "title": "Endocrinology care and investigations",
+        "amount": 2450,
+        "status": "Unpaid",
+        "date": "2026-11-18"
+      },
+      "appointment": {
+        "id": "APT-JRN-P-012",
+        "patient": "P-012",
+        "doctor": "Dr. Rahul Sharma",
+        "doctorId": "demo-doctor",
+        "date": "2026-11-18",
+        "time": "14:15",
+        "type": "Follow-up",
+        "status": "Completed",
+        "approval": "Confirmed",
+        "notes": "Endocrinology review for Type 2 diabetes"
+      },
+      "priorAppointment": {
+        "id": "APT-PRIOR-P-012",
+        "patient": "P-012",
+        "doctor": "Dr. Rahul Sharma",
+        "doctorId": "demo-doctor",
+        "date": "2026-08-06",
+        "time": "10:30",
+        "type": "Prior consultation",
+        "status": "Completed",
+        "approval": "Confirmed",
+        "notes": "Clinical history reviewed for Type 2 diabetes"
+      },
+      "priorReport": {
+        "id": "LAB-PRIOR-P-012",
+        "patient": "P-012",
+        "type": "Lab report",
+        "title": "Previous Endocrinology assessment",
+        "date": "2026-08-06",
+        "department": "Endocrinology",
+        "reference": "HB-PR-012",
+        "doctor": "Dr. Rahul Sharma",
+        "author": "HealthBridge Diagnostics",
+        "body": "Review date: 2026-08-06\nClinical history: Type 2 diabetes\nSymptoms and follow-up concerns recorded.\nFurther monitoring planned at next visit."
+      },
+      "priorPrescription": {
+        "id": "RX-PRIOR-P-012",
+        "patient": "P-012",
+        "title": "Previous Endocrinology treatment review",
+        "type": "Prescription",
+        "date": "2026-08-06",
+        "doctor": "Dr. Rahul Sharma",
+        "author": "Dr. Rahul Sharma",
+        "department": "Endocrinology",
+        "medications": [
+          {
+            "name": "Metformin",
+            "schedule": "Morning / Evening",
+            "instructions": "With meals per existing prescription",
+            "status": "Completed"
+          }
+        ],
+        "body": "Previous visit: 2026-08-06\nCurrent medicines discussed and reconciled.\nNo new prescription authorized by historical entry."
+      }
+    },
+    {
+      "profile": {
+        "id": "P-013",
+        "name": "Riya Patel",
+        "age": 21,
+        "gender": "Female",
+        "condition": "Anemia",
+        "blood": "A+",
+        "phone": "Not recorded",
+        "email": "care.p-013@example.invalid",
+        "address": "Pune, Maharashtra",
+        "notes": "Prior visit 2026-08-03; current care pathway: Internal Medicine",
+        "assignedDoctor": "demo-doctor"
+      },
+      "episode": {
+        "id": "EP-P-013",
+        "patient": "P-013",
+        "stage": "Arrived",
+        "visitType": "Outpatient",
+        "arrivalAt": "2026-11-19T14:30:00+05:30",
+        "admittedAt": null,
+        "dischargedAt": null,
+        "doctorId": "demo-doctor",
+        "department": "Internal Medicine",
+        "ward": "\u2014",
+        "bed": "",
+        "notes": "Anemia; assessment and ongoing care documentation",
+        "priorVisitAt": "2026-08-03",
+        "medications": [
+          {
+            "name": "Iron supplement",
+            "schedule": "Afternoon",
+            "instructions": "After lunch per recorded order",
+            "status": "Active"
+          }
+        ],
+        "events": [
+          {
+            "at": "2026-08-03T10:30:00+05:30",
+            "title": "Previous consultation",
+            "detail": "Prior internal medicine assessment and follow-up review"
+          },
+          {
+            "at": "2026-11-19T14:30:00+05:30",
+            "title": "Arrival registered",
+            "detail": "Patient details confirmed at reception"
+          },
+          {
+            "at": "2026-11-19T16:00:00+05:30",
+            "title": "Clinical review",
+            "detail": "Internal Medicine review; medication and investigations reconciled"
+          }
+        ],
+        "updatedAt": "2026-11-19T14:30:00+05:30",
+        "_source": "training"
+      },
+      "report": {
+        "id": "LAB-JRN-P-013",
+        "patient": "P-013",
+        "type": "Lab report",
+        "title": "Internal Medicine clinical review and investigations",
+        "date": "2026-11-19",
+        "department": "Internal Medicine",
+        "reference": "HB-LAB-013",
+        "doctor": "Dr. Rahul Sharma",
+        "author": "HealthBridge Diagnostics",
+        "body": "Clinical presentation: Anemia.\nRecorded assessment: follow-up tests reviewed by care team.\nPrevious consultation: 2026-08-03.\nReview date: 2026-11-19.\nAssessment details: See linked encounter and treating physician notes.\nNo diagnosis generated from this document."
+      },
+      "prescription": {
+        "id": "RX-JRN-P-013",
+        "patient": "P-013",
+        "title": "Anemia \u2014 Medication schedule",
+        "type": "Prescription",
+        "date": "2026-11-19",
+        "doctor": "Dr. Rahul Sharma",
+        "author": "Dr. Rahul Sharma",
+        "department": "Internal Medicine",
+        "medications": [
+          {
+            "name": "Iron supplement",
+            "schedule": "Afternoon",
+            "instructions": "After lunch per recorded order",
+            "status": "Active"
+          }
+        ],
+        "body": "Iron supplement | Afternoon | After lunch per recorded order\nReview medication reconciliation with treating physician."
+      },
+      "bill": {
+        "id": "INV-JRN-P-013",
+        "patient": "P-013",
+        "title": "Internal Medicine care and investigations",
+        "amount": 2770,
+        "status": "Paid",
+        "date": "2026-11-19"
+      },
+      "appointment": {
+        "id": "APT-JRN-P-013",
+        "patient": "P-013",
+        "doctor": "Dr. Rahul Sharma",
+        "doctorId": "demo-doctor",
+        "date": "2026-11-26",
+        "time": "15:30",
+        "type": "Consultation",
+        "status": "Scheduled",
+        "approval": "Confirmed",
+        "notes": "Internal Medicine review for Anemia"
+      },
+      "priorAppointment": {
+        "id": "APT-PRIOR-P-013",
+        "patient": "P-013",
+        "doctor": "Dr. Rahul Sharma",
+        "doctorId": "demo-doctor",
+        "date": "2026-08-03",
+        "time": "11:30",
+        "type": "Prior consultation",
+        "status": "Completed",
+        "approval": "Confirmed",
+        "notes": "Clinical history reviewed for Anemia"
+      },
+      "priorReport": {
+        "id": "LAB-PRIOR-P-013",
+        "patient": "P-013",
+        "type": "Lab report",
+        "title": "Previous Internal Medicine assessment",
+        "date": "2026-08-03",
+        "department": "Internal Medicine",
+        "reference": "HB-PR-013",
+        "doctor": "Dr. Rahul Sharma",
+        "author": "HealthBridge Diagnostics",
+        "body": "Review date: 2026-08-03\nClinical history: Anemia\nSymptoms and follow-up concerns recorded.\nFurther monitoring planned at next visit."
+      },
+      "priorPrescription": {
+        "id": "RX-PRIOR-P-013",
+        "patient": "P-013",
+        "title": "Previous Internal Medicine treatment review",
+        "type": "Prescription",
+        "date": "2026-08-03",
+        "doctor": "Dr. Rahul Sharma",
+        "author": "Dr. Rahul Sharma",
+        "department": "Internal Medicine",
+        "medications": [
+          {
+            "name": "Iron supplement",
+            "schedule": "Afternoon",
+            "instructions": "After lunch per recorded order",
+            "status": "Active"
+          }
+        ],
+        "body": "Previous visit: 2026-08-03\nCurrent medicines discussed and reconciled.\nNo new prescription authorized by historical entry."
+      }
+    },
+    {
+      "profile": {
+        "id": "P-014",
+        "name": "Aditya Menon",
+        "age": 57,
+        "gender": "Male",
+        "condition": "Stroke rehabilitation",
+        "blood": "AB+",
+        "phone": "Not recorded",
+        "email": "care.p-014@example.invalid",
+        "address": "Pune, Maharashtra",
+        "notes": "Prior visit 2026-07-31; current care pathway: Neurology",
+        "assignedDoctor": "doctor-neuro"
+      },
+      "episode": {
+        "id": "EP-P-014",
+        "patient": "P-014",
+        "stage": "ICU",
+        "visitType": "Emergency",
+        "arrivalAt": "2026-11-16T15:45:00+05:30",
+        "admittedAt": "2026-11-16T10:00:00+05:30",
+        "dischargedAt": null,
+        "doctorId": "doctor-neuro",
+        "department": "Neurology",
+        "ward": "ICU",
+        "bed": "ICU-18",
+        "notes": "Stroke rehabilitation; assessment and ongoing care documentation",
+        "priorVisitAt": "2026-07-31",
+        "medications": [
+          {
+            "name": "Antiplatelet therapy",
+            "schedule": "Morning",
+            "instructions": "Per consultant order",
+            "status": "Active"
+          }
+        ],
+        "events": [
+          {
+            "at": "2026-07-31T10:30:00+05:30",
+            "title": "Previous consultation",
+            "detail": "Prior neurology assessment and follow-up review"
+          },
+          {
+            "at": "2026-11-16T15:45:00+05:30",
+            "title": "Arrival registered",
+            "detail": "Patient details confirmed at reception"
+          },
+          {
+            "at": "2026-11-16T10:00:00+05:30",
+            "title": "Admitted to ICU",
+            "detail": "Care team allocation and initial assessment completed"
+          },
+          {
+            "at": "2026-11-16T16:00:00+05:30",
+            "title": "Clinical review",
+            "detail": "Neurology review; medication and investigations reconciled"
+          }
+        ],
+        "updatedAt": "2026-11-16T15:45:00+05:30",
+        "_source": "training"
+      },
+      "report": {
+        "id": "LAB-JRN-P-014",
+        "patient": "P-014",
+        "type": "Lab report",
+        "title": "Neurology clinical review and investigations",
+        "date": "2026-11-16",
+        "department": "Neurology",
+        "reference": "HB-LAB-014",
+        "doctor": "Dr. Anjali Deshpande",
+        "author": "HealthBridge Diagnostics",
+        "body": "Clinical presentation: Stroke rehabilitation.\nRecorded assessment: follow-up tests reviewed by care team.\nPrevious consultation: 2026-07-31.\nReview date: 2026-11-16.\nAssessment details: See linked encounter and treating physician notes.\nNo diagnosis generated from this document."
+      },
+      "prescription": {
+        "id": "RX-JRN-P-014",
+        "patient": "P-014",
+        "title": "Stroke rehabilitation \u2014 Medication schedule",
+        "type": "Prescription",
+        "date": "2026-11-16",
+        "doctor": "Dr. Anjali Deshpande",
+        "author": "Dr. Anjali Deshpande",
+        "department": "Neurology",
+        "medications": [
+          {
+            "name": "Antiplatelet therapy",
+            "schedule": "Morning",
+            "instructions": "Per consultant order",
+            "status": "Active"
+          }
+        ],
+        "body": "Antiplatelet therapy | Morning | Per consultant order\nReview medication reconciliation with treating physician."
+      },
+      "bill": {
+        "id": "INV-JRN-P-014",
+        "patient": "P-014",
+        "title": "Neurology care and investigations",
+        "amount": 4450,
+        "status": "Unpaid",
+        "date": "2026-11-16"
+      },
+      "appointment": {
+        "id": "APT-JRN-P-014",
+        "patient": "P-014",
+        "doctor": "Dr. Anjali Deshpande",
+        "doctorId": "doctor-neuro",
+        "date": "2026-11-27",
+        "time": "09:45",
+        "type": "Follow-up",
+        "status": "Scheduled",
+        "approval": "Confirmed",
+        "notes": "Neurology review for Stroke rehabilitation"
+      },
+      "priorAppointment": {
+        "id": "APT-PRIOR-P-014",
+        "patient": "P-014",
+        "doctor": "Dr. Anjali Deshpande",
+        "doctorId": "doctor-neuro",
+        "date": "2026-07-31",
+        "time": "12:30",
+        "type": "Prior consultation",
+        "status": "Completed",
+        "approval": "Confirmed",
+        "notes": "Clinical history reviewed for Stroke rehabilitation"
+      },
+      "priorReport": {
+        "id": "LAB-PRIOR-P-014",
+        "patient": "P-014",
+        "type": "Lab report",
+        "title": "Previous Neurology assessment",
+        "date": "2026-07-31",
+        "department": "Neurology",
+        "reference": "HB-PR-014",
+        "doctor": "Dr. Anjali Deshpande",
+        "author": "HealthBridge Diagnostics",
+        "body": "Review date: 2026-07-31\nClinical history: Stroke rehabilitation\nSymptoms and follow-up concerns recorded.\nFurther monitoring planned at next visit."
+      },
+      "priorPrescription": {
+        "id": "RX-PRIOR-P-014",
+        "patient": "P-014",
+        "title": "Previous Neurology treatment review",
+        "type": "Prescription",
+        "date": "2026-07-31",
+        "doctor": "Dr. Anjali Deshpande",
+        "author": "Dr. Anjali Deshpande",
+        "department": "Neurology",
+        "medications": [
+          {
+            "name": "Antiplatelet therapy",
+            "schedule": "Morning",
+            "instructions": "Per consultant order",
+            "status": "Active"
+          }
+        ],
+        "body": "Previous visit: 2026-07-31\nCurrent medicines discussed and reconciled.\nNo new prescription authorized by historical entry."
+      }
+    },
+    {
+      "profile": {
+        "id": "P-015",
+        "name": "Sana Qureshi",
+        "age": 34,
+        "gender": "Female",
+        "condition": "Gallbladder surgery",
+        "blood": "O+",
+        "phone": "Not recorded",
+        "email": "care.p-015@example.invalid",
+        "address": "Pune, Maharashtra",
+        "notes": "Prior visit 2026-07-28; current care pathway: Surgery",
+        "assignedDoctor": "doctor-surgery"
+      },
+      "episode": {
+        "id": "EP-P-015",
+        "patient": "P-015",
+        "stage": "Discharged",
+        "visitType": "Inpatient",
+        "arrivalAt": "2026-11-15T08:00:00+05:30",
+        "admittedAt": "2026-11-15T11:00:00+05:30",
+        "dischargedAt": "2026-11-18T15:45:00+05:30",
+        "doctorId": "doctor-surgery",
+        "department": "Surgery",
+        "ward": "\u2014",
+        "bed": "",
+        "notes": "Gallbladder surgery; assessment and ongoing care documentation",
+        "priorVisitAt": "2026-07-28",
+        "medications": [
+          {
+            "name": "Post-operative analgesic",
+            "schedule": "Morning",
+            "instructions": "Per discharge order",
+            "status": "Completed"
+          }
+        ],
+        "events": [
+          {
+            "at": "2026-07-28T10:30:00+05:30",
+            "title": "Previous consultation",
+            "detail": "Prior surgery assessment and follow-up review"
+          },
+          {
+            "at": "2026-11-15T08:00:00+05:30",
+            "title": "Arrival registered",
+            "detail": "Patient details confirmed at reception"
+          },
+          {
+            "at": "2026-11-15T11:00:00+05:30",
+            "title": "Admitted to hospital",
+            "detail": "Care team allocation and initial assessment completed"
+          },
+          {
+            "at": "2026-11-15T16:00:00+05:30",
+            "title": "Clinical review",
+            "detail": "Surgery review; medication and investigations reconciled"
+          },
+          {
+            "at": "2026-11-18T15:45:00+05:30",
+            "title": "Discharged",
+            "detail": "Discharge plan issued; follow-up advised"
+          }
+        ],
+        "updatedAt": "2026-11-15T08:00:00+05:30",
+        "_source": "training"
+      },
+      "report": {
+        "id": "LAB-JRN-P-015",
+        "patient": "P-015",
+        "type": "Lab report",
+        "title": "Surgery clinical review and investigations",
+        "date": "2026-11-15",
+        "department": "Surgery",
+        "reference": "HB-LAB-015",
+        "doctor": "Dr. Vikram Sinha",
+        "author": "HealthBridge Diagnostics",
+        "body": "Clinical presentation: Gallbladder surgery.\nRecorded assessment: follow-up tests reviewed by care team.\nPrevious consultation: 2026-07-28.\nReview date: 2026-11-15.\nAssessment details: See linked encounter and treating physician notes.\nNo diagnosis generated from this document."
+      },
+      "prescription": {
+        "id": "RX-JRN-P-015",
+        "patient": "P-015",
+        "title": "Gallbladder surgery \u2014 Medication schedule",
+        "type": "Prescription",
+        "date": "2026-11-15",
+        "doctor": "Dr. Vikram Sinha",
+        "author": "Dr. Vikram Sinha",
+        "department": "Surgery",
+        "medications": [
+          {
+            "name": "Post-operative analgesic",
+            "schedule": "Morning",
+            "instructions": "Per discharge order",
+            "status": "Completed"
+          }
+        ],
+        "body": "Post-operative analgesic | Morning | Per discharge order\nReview medication reconciliation with treating physician."
+      },
+      "bill": {
+        "id": "INV-JRN-P-015",
+        "patient": "P-015",
+        "title": "Surgery care and investigations",
+        "amount": 1170,
+        "status": "Unpaid",
+        "date": "2026-11-15"
+      },
+      "appointment": {
+        "id": "APT-JRN-P-015",
+        "patient": "P-015",
+        "doctor": "Dr. Vikram Sinha",
+        "doctorId": "doctor-surgery",
+        "date": "2026-11-15",
+        "time": "10:00",
+        "type": "Follow-up",
+        "status": "Completed",
+        "approval": "Confirmed",
+        "notes": "Surgery review for Gallbladder surgery"
+      },
+      "priorAppointment": {
+        "id": "APT-PRIOR-P-015",
+        "patient": "P-015",
+        "doctor": "Dr. Vikram Sinha",
+        "doctorId": "doctor-surgery",
+        "date": "2026-07-28",
+        "time": "13:30",
+        "type": "Prior consultation",
+        "status": "Completed",
+        "approval": "Confirmed",
+        "notes": "Clinical history reviewed for Gallbladder surgery"
+      },
+      "priorReport": {
+        "id": "LAB-PRIOR-P-015",
+        "patient": "P-015",
+        "type": "Lab report",
+        "title": "Previous Surgery assessment",
+        "date": "2026-07-28",
+        "department": "Surgery",
+        "reference": "HB-PR-015",
+        "doctor": "Dr. Vikram Sinha",
+        "author": "HealthBridge Diagnostics",
+        "body": "Review date: 2026-07-28\nClinical history: Gallbladder surgery\nSymptoms and follow-up concerns recorded.\nFurther monitoring planned at next visit."
+      },
+      "priorPrescription": {
+        "id": "RX-PRIOR-P-015",
+        "patient": "P-015",
+        "title": "Previous Surgery treatment review",
+        "type": "Prescription",
+        "date": "2026-07-28",
+        "doctor": "Dr. Vikram Sinha",
+        "author": "Dr. Vikram Sinha",
+        "department": "Surgery",
+        "medications": [
+          {
+            "name": "Post-operative analgesic",
+            "schedule": "Morning",
+            "instructions": "Per discharge order",
+            "status": "Completed"
+          }
+        ],
+        "body": "Previous visit: 2026-07-28\nCurrent medicines discussed and reconciled.\nNo new prescription authorized by historical entry."
+      }
+    },
+    {
+      "profile": {
+        "id": "P-016",
+        "name": "Nikhil Joshi",
+        "age": 46,
+        "gender": "Male",
+        "condition": "Kidney stone",
+        "blood": "B+",
+        "phone": "Not recorded",
+        "email": "care.p-016@example.invalid",
+        "address": "Pune, Maharashtra",
+        "notes": "Prior visit 2026-07-25; current care pathway: Urology",
+        "assignedDoctor": "demo-doctor"
+      },
+      "episode": {
+        "id": "EP-P-016",
+        "patient": "P-016",
+        "stage": "Arrived",
+        "visitType": "Outpatient",
+        "arrivalAt": "2026-11-19T09:15:00+05:30",
+        "admittedAt": null,
+        "dischargedAt": null,
+        "doctorId": "demo-doctor",
+        "department": "Urology",
+        "ward": "\u2014",
+        "bed": "",
+        "notes": "Kidney stone; assessment and ongoing care documentation",
+        "priorVisitAt": "2026-07-25",
+        "medications": [
+          {
+            "name": "Analgesic",
+            "schedule": "When needed",
+            "instructions": "Per treatment chart",
+            "status": "Active"
+          }
+        ],
+        "events": [
+          {
+            "at": "2026-07-25T10:30:00+05:30",
+            "title": "Previous consultation",
+            "detail": "Prior urology assessment and follow-up review"
+          },
+          {
+            "at": "2026-11-19T09:15:00+05:30",
+            "title": "Arrival registered",
+            "detail": "Patient details confirmed at reception"
+          },
+          {
+            "at": "2026-11-19T16:00:00+05:30",
+            "title": "Clinical review",
+            "detail": "Urology review; medication and investigations reconciled"
+          }
+        ],
+        "updatedAt": "2026-11-19T09:15:00+05:30",
+        "_source": "training"
+      },
+      "report": {
+        "id": "LAB-JRN-P-016",
+        "patient": "P-016",
+        "type": "Lab report",
+        "title": "Urology clinical review and investigations",
+        "date": "2026-11-19",
+        "department": "Urology",
+        "reference": "HB-LAB-016",
+        "doctor": "Dr. Rahul Sharma",
+        "author": "HealthBridge Diagnostics",
+        "body": "Clinical presentation: Kidney stone.\nRecorded assessment: follow-up tests reviewed by care team.\nPrevious consultation: 2026-07-25.\nReview date: 2026-11-19.\nAssessment details: See linked encounter and treating physician notes.\nNo diagnosis generated from this document."
+      },
+      "prescription": {
+        "id": "RX-JRN-P-016",
+        "patient": "P-016",
+        "title": "Kidney stone \u2014 Medication schedule",
+        "type": "Prescription",
+        "date": "2026-11-19",
+        "doctor": "Dr. Rahul Sharma",
+        "author": "Dr. Rahul Sharma",
+        "department": "Urology",
+        "medications": [
+          {
+            "name": "Analgesic",
+            "schedule": "When needed",
+            "instructions": "Per treatment chart",
+            "status": "Active"
+          }
+        ],
+        "body": "Analgesic | When needed | Per treatment chart\nReview medication reconciliation with treating physician."
+      },
+      "bill": {
+        "id": "INV-JRN-P-016",
+        "patient": "P-016",
+        "title": "Urology care and investigations",
+        "amount": 1490,
+        "status": "Paid",
+        "date": "2026-11-19"
+      },
+      "appointment": {
+        "id": "APT-JRN-P-016",
+        "patient": "P-016",
+        "doctor": "Dr. Rahul Sharma",
+        "doctorId": "demo-doctor",
+        "date": "2026-11-21",
+        "time": "11:15",
+        "type": "Consultation",
+        "status": "Scheduled",
+        "approval": "Confirmed",
+        "notes": "Urology review for Kidney stone"
+      },
+      "priorAppointment": {
+        "id": "APT-PRIOR-P-016",
+        "patient": "P-016",
+        "doctor": "Dr. Rahul Sharma",
+        "doctorId": "demo-doctor",
+        "date": "2026-07-25",
+        "time": "14:30",
+        "type": "Prior consultation",
+        "status": "Completed",
+        "approval": "Confirmed",
+        "notes": "Clinical history reviewed for Kidney stone"
+      },
+      "priorReport": {
+        "id": "LAB-PRIOR-P-016",
+        "patient": "P-016",
+        "type": "Lab report",
+        "title": "Previous Urology assessment",
+        "date": "2026-07-25",
+        "department": "Urology",
+        "reference": "HB-PR-016",
+        "doctor": "Dr. Rahul Sharma",
+        "author": "HealthBridge Diagnostics",
+        "body": "Review date: 2026-07-25\nClinical history: Kidney stone\nSymptoms and follow-up concerns recorded.\nFurther monitoring planned at next visit."
+      },
+      "priorPrescription": {
+        "id": "RX-PRIOR-P-016",
+        "patient": "P-016",
+        "title": "Previous Urology treatment review",
+        "type": "Prescription",
+        "date": "2026-07-25",
+        "doctor": "Dr. Rahul Sharma",
+        "author": "Dr. Rahul Sharma",
+        "department": "Urology",
+        "medications": [
+          {
+            "name": "Analgesic",
+            "schedule": "When needed",
+            "instructions": "Per treatment chart",
+            "status": "Active"
+          }
+        ],
+        "body": "Previous visit: 2026-07-25\nCurrent medicines discussed and reconciled.\nNo new prescription authorized by historical entry."
+      }
+    },
+    {
+      "profile": {
+        "id": "P-017",
+        "name": "Meera Narang",
+        "age": 61,
+        "gender": "Female",
+        "condition": "COPD exacerbation",
+        "blood": "A+",
+        "phone": "Not recorded",
+        "email": "care.p-017@example.invalid",
+        "address": "Pune, Maharashtra",
+        "notes": "Prior visit 2026-07-22; current care pathway: Pulmonology",
+        "assignedDoctor": "doctor-pulmo"
+      },
+      "episode": {
+        "id": "EP-P-017",
+        "patient": "P-017",
+        "stage": "Admitted",
+        "visitType": "Inpatient",
+        "arrivalAt": "2026-11-18T10:30:00+05:30",
+        "admittedAt": "2026-11-18T13:00:00+05:30",
+        "dischargedAt": null,
+        "doctorId": "doctor-pulmo",
+        "department": "Pulmonology",
+        "ward": "General ward",
+        "bed": "WARD-31",
+        "notes": "COPD exacerbation; assessment and ongoing care documentation",
+        "priorVisitAt": "2026-07-22",
+        "medications": [
+          {
+            "name": "Bronchodilator",
+            "schedule": "Morning / Afternoon / Night",
+            "instructions": "Per respiratory care plan",
+            "status": "Active"
+          }
+        ],
+        "events": [
+          {
+            "at": "2026-07-22T10:30:00+05:30",
+            "title": "Previous consultation",
+            "detail": "Prior pulmonology assessment and follow-up review"
+          },
+          {
+            "at": "2026-11-18T10:30:00+05:30",
+            "title": "Arrival registered",
+            "detail": "Patient details confirmed at reception"
+          },
+          {
+            "at": "2026-11-18T13:00:00+05:30",
+            "title": "Admitted to hospital",
+            "detail": "Care team allocation and initial assessment completed"
+          },
+          {
+            "at": "2026-11-18T16:00:00+05:30",
+            "title": "Clinical review",
+            "detail": "Pulmonology review; medication and investigations reconciled"
+          }
+        ],
+        "updatedAt": "2026-11-18T10:30:00+05:30",
+        "_source": "training"
+      },
+      "report": {
+        "id": "LAB-JRN-P-017",
+        "patient": "P-017",
+        "type": "Lab report",
+        "title": "Pulmonology clinical review and investigations",
+        "date": "2026-11-18",
+        "department": "Pulmonology",
+        "reference": "HB-LAB-017",
+        "doctor": "Dr. Nisha Shah",
+        "author": "HealthBridge Diagnostics",
+        "body": "Clinical presentation: COPD exacerbation.\nRecorded assessment: follow-up tests reviewed by care team.\nPrevious consultation: 2026-07-22.\nReview date: 2026-11-18.\nAssessment details: See linked encounter and treating physician notes.\nNo diagnosis generated from this document."
+      },
+      "prescription": {
+        "id": "RX-JRN-P-017",
+        "patient": "P-017",
+        "title": "COPD exacerbation \u2014 Medication schedule",
+        "type": "Prescription",
+        "date": "2026-11-18",
+        "doctor": "Dr. Nisha Shah",
+        "author": "Dr. Nisha Shah",
+        "department": "Pulmonology",
+        "medications": [
+          {
+            "name": "Bronchodilator",
+            "schedule": "Morning / Afternoon / Night",
+            "instructions": "Per respiratory care plan",
+            "status": "Active"
+          }
+        ],
+        "body": "Bronchodilator | Morning / Afternoon / Night | Per respiratory care plan\nReview medication reconciliation with treating physician."
+      },
+      "bill": {
+        "id": "INV-JRN-P-017",
+        "patient": "P-017",
+        "title": "Pulmonology care and investigations",
+        "amount": 5410,
+        "status": "Unpaid",
+        "date": "2026-11-18"
+      },
+      "appointment": {
+        "id": "APT-JRN-P-017",
+        "patient": "P-017",
+        "doctor": "Dr. Nisha Shah",
+        "doctorId": "doctor-pulmo",
+        "date": "2026-11-22",
+        "time": "12:30",
+        "type": "Follow-up",
+        "status": "Scheduled",
+        "approval": "Confirmed",
+        "notes": "Pulmonology review for COPD exacerbation"
+      },
+      "priorAppointment": {
+        "id": "APT-PRIOR-P-017",
+        "patient": "P-017",
+        "doctor": "Dr. Nisha Shah",
+        "doctorId": "doctor-pulmo",
+        "date": "2026-07-22",
+        "time": "10:30",
+        "type": "Prior consultation",
+        "status": "Completed",
+        "approval": "Confirmed",
+        "notes": "Clinical history reviewed for COPD exacerbation"
+      },
+      "priorReport": {
+        "id": "LAB-PRIOR-P-017",
+        "patient": "P-017",
+        "type": "Lab report",
+        "title": "Previous Pulmonology assessment",
+        "date": "2026-07-22",
+        "department": "Pulmonology",
+        "reference": "HB-PR-017",
+        "doctor": "Dr. Nisha Shah",
+        "author": "HealthBridge Diagnostics",
+        "body": "Review date: 2026-07-22\nClinical history: COPD exacerbation\nSymptoms and follow-up concerns recorded.\nFurther monitoring planned at next visit."
+      },
+      "priorPrescription": {
+        "id": "RX-PRIOR-P-017",
+        "patient": "P-017",
+        "title": "Previous Pulmonology treatment review",
+        "type": "Prescription",
+        "date": "2026-07-22",
+        "doctor": "Dr. Nisha Shah",
+        "author": "Dr. Nisha Shah",
+        "department": "Pulmonology",
+        "medications": [
+          {
+            "name": "Bronchodilator",
+            "schedule": "Morning / Afternoon / Night",
+            "instructions": "Per respiratory care plan",
+            "status": "Active"
+          }
+        ],
+        "body": "Previous visit: 2026-07-22\nCurrent medicines discussed and reconciled.\nNo new prescription authorized by historical entry."
+      }
+    },
+    {
+      "profile": {
+        "id": "P-018",
+        "name": "Om Prakash",
+        "age": 27,
+        "gender": "Male",
+        "condition": "Dehydration",
+        "blood": "AB+",
+        "phone": "Not recorded",
+        "email": "care.p-018@example.invalid",
+        "address": "Pune, Maharashtra",
+        "notes": "Prior visit 2026-07-19; current care pathway: Internal Medicine",
+        "assignedDoctor": "demo-doctor"
+      },
+      "episode": {
+        "id": "EP-P-018",
+        "patient": "P-018",
+        "stage": "Discharged",
+        "visitType": "Inpatient",
+        "arrivalAt": "2026-11-17T11:45:00+05:30",
+        "admittedAt": "2026-11-17T14:00:00+05:30",
+        "dischargedAt": "2026-11-18T15:45:00+05:30",
+        "doctorId": "demo-doctor",
+        "department": "Internal Medicine",
+        "ward": "\u2014",
+        "bed": "",
+        "notes": "Dehydration; assessment and ongoing care documentation",
+        "priorVisitAt": "2026-07-19",
+        "medications": [
+          {
+            "name": "Oral rehydration solution",
+            "schedule": "Morning / Afternoon / Night",
+            "instructions": "Follow clinician guidance",
+            "status": "Completed"
+          }
+        ],
+        "events": [
+          {
+            "at": "2026-07-19T10:30:00+05:30",
+            "title": "Previous consultation",
+            "detail": "Prior internal medicine assessment and follow-up review"
+          },
+          {
+            "at": "2026-11-17T11:45:00+05:30",
+            "title": "Arrival registered",
+            "detail": "Patient details confirmed at reception"
+          },
+          {
+            "at": "2026-11-17T14:00:00+05:30",
+            "title": "Admitted to hospital",
+            "detail": "Care team allocation and initial assessment completed"
+          },
+          {
+            "at": "2026-11-17T16:00:00+05:30",
+            "title": "Clinical review",
+            "detail": "Internal Medicine review; medication and investigations reconciled"
+          },
+          {
+            "at": "2026-11-18T15:45:00+05:30",
+            "title": "Discharged",
+            "detail": "Discharge plan issued; follow-up advised"
+          }
+        ],
+        "updatedAt": "2026-11-17T11:45:00+05:30",
+        "_source": "training"
+      },
+      "report": {
+        "id": "LAB-JRN-P-018",
+        "patient": "P-018",
+        "type": "Lab report",
+        "title": "Internal Medicine clinical review and investigations",
+        "date": "2026-11-17",
+        "department": "Internal Medicine",
+        "reference": "HB-LAB-018",
+        "doctor": "Dr. Rahul Sharma",
+        "author": "HealthBridge Diagnostics",
+        "body": "Clinical presentation: Dehydration.\nRecorded assessment: follow-up tests reviewed by care team.\nPrevious consultation: 2026-07-19.\nReview date: 2026-11-17.\nAssessment details: See linked encounter and treating physician notes.\nNo diagnosis generated from this document."
+      },
+      "prescription": {
+        "id": "RX-JRN-P-018",
+        "patient": "P-018",
+        "title": "Dehydration \u2014 Medication schedule",
+        "type": "Prescription",
+        "date": "2026-11-17",
+        "doctor": "Dr. Rahul Sharma",
+        "author": "Dr. Rahul Sharma",
+        "department": "Internal Medicine",
+        "medications": [
+          {
+            "name": "Oral rehydration solution",
+            "schedule": "Morning / Afternoon / Night",
+            "instructions": "Follow clinician guidance",
+            "status": "Completed"
+          }
+        ],
+        "body": "Oral rehydration solution | Morning / Afternoon / Night | Follow clinician guidance\nReview medication reconciliation with treating physician."
+      },
+      "bill": {
+        "id": "INV-JRN-P-018",
+        "patient": "P-018",
+        "title": "Internal Medicine care and investigations",
+        "amount": 2130,
+        "status": "Unpaid",
+        "date": "2026-11-17"
+      },
+      "appointment": {
+        "id": "APT-JRN-P-018",
+        "patient": "P-018",
+        "doctor": "Dr. Rahul Sharma",
+        "doctorId": "demo-doctor",
+        "date": "2026-11-17",
+        "time": "13:45",
+        "type": "Follow-up",
+        "status": "Completed",
+        "approval": "Confirmed",
+        "notes": "Internal Medicine review for Dehydration"
+      },
+      "priorAppointment": {
+        "id": "APT-PRIOR-P-018",
+        "patient": "P-018",
+        "doctor": "Dr. Rahul Sharma",
+        "doctorId": "demo-doctor",
+        "date": "2026-07-19",
+        "time": "11:30",
+        "type": "Prior consultation",
+        "status": "Completed",
+        "approval": "Confirmed",
+        "notes": "Clinical history reviewed for Dehydration"
+      },
+      "priorReport": {
+        "id": "LAB-PRIOR-P-018",
+        "patient": "P-018",
+        "type": "Lab report",
+        "title": "Previous Internal Medicine assessment",
+        "date": "2026-07-19",
+        "department": "Internal Medicine",
+        "reference": "HB-PR-018",
+        "doctor": "Dr. Rahul Sharma",
+        "author": "HealthBridge Diagnostics",
+        "body": "Review date: 2026-07-19\nClinical history: Dehydration\nSymptoms and follow-up concerns recorded.\nFurther monitoring planned at next visit."
+      },
+      "priorPrescription": {
+        "id": "RX-PRIOR-P-018",
+        "patient": "P-018",
+        "title": "Previous Internal Medicine treatment review",
+        "type": "Prescription",
+        "date": "2026-07-19",
+        "doctor": "Dr. Rahul Sharma",
+        "author": "Dr. Rahul Sharma",
+        "department": "Internal Medicine",
+        "medications": [
+          {
+            "name": "Oral rehydration solution",
+            "schedule": "Morning / Afternoon / Night",
+            "instructions": "Follow clinician guidance",
+            "status": "Completed"
+          }
+        ],
+        "body": "Previous visit: 2026-07-19\nCurrent medicines discussed and reconciled.\nNo new prescription authorized by historical entry."
+      }
+    },
+    {
+      "profile": {
+        "id": "P-019",
+        "name": "Aditi Shah",
+        "age": 44,
+        "gender": "Female",
+        "condition": "Hypothyroidism",
+        "blood": "O+",
+        "phone": "Not recorded",
+        "email": "care.p-019@example.invalid",
+        "address": "Pune, Maharashtra",
+        "notes": "Prior visit 2026-07-16; current care pathway: Endocrinology",
+        "assignedDoctor": "demo-doctor"
+      },
+      "episode": {
+        "id": "EP-P-019",
+        "patient": "P-019",
+        "stage": "Arrived",
+        "visitType": "Outpatient",
+        "arrivalAt": "2026-11-19T12:00:00+05:30",
+        "admittedAt": null,
+        "dischargedAt": null,
+        "doctorId": "demo-doctor",
+        "department": "Endocrinology",
+        "ward": "\u2014",
+        "bed": "",
+        "notes": "Hypothyroidism; assessment and ongoing care documentation",
+        "priorVisitAt": "2026-07-16",
+        "medications": [
+          {
+            "name": "Levothyroxine",
+            "schedule": "Early morning",
+            "instructions": "Before food per existing prescription",
+            "status": "Active"
+          }
+        ],
+        "events": [
+          {
+            "at": "2026-07-16T10:30:00+05:30",
+            "title": "Previous consultation",
+            "detail": "Prior endocrinology assessment and follow-up review"
+          },
+          {
+            "at": "2026-11-19T12:00:00+05:30",
+            "title": "Arrival registered",
+            "detail": "Patient details confirmed at reception"
+          },
+          {
+            "at": "2026-11-19T16:00:00+05:30",
+            "title": "Clinical review",
+            "detail": "Endocrinology review; medication and investigations reconciled"
+          }
+        ],
+        "updatedAt": "2026-11-19T12:00:00+05:30",
+        "_source": "training"
+      },
+      "report": {
+        "id": "LAB-JRN-P-019",
+        "patient": "P-019",
+        "type": "Lab report",
+        "title": "Endocrinology clinical review and investigations",
+        "date": "2026-11-19",
+        "department": "Endocrinology",
+        "reference": "HB-LAB-019",
+        "doctor": "Dr. Rahul Sharma",
+        "author": "HealthBridge Diagnostics",
+        "body": "Clinical presentation: Hypothyroidism.\nRecorded assessment: follow-up tests reviewed by care team.\nPrevious consultation: 2026-07-16.\nReview date: 2026-11-19.\nAssessment details: See linked encounter and treating physician notes.\nNo diagnosis generated from this document."
+      },
+      "prescription": {
+        "id": "RX-JRN-P-019",
+        "patient": "P-019",
+        "title": "Hypothyroidism \u2014 Medication schedule",
+        "type": "Prescription",
+        "date": "2026-11-19",
+        "doctor": "Dr. Rahul Sharma",
+        "author": "Dr. Rahul Sharma",
+        "department": "Endocrinology",
+        "medications": [
+          {
+            "name": "Levothyroxine",
+            "schedule": "Early morning",
+            "instructions": "Before food per existing prescription",
+            "status": "Active"
+          }
+        ],
+        "body": "Levothyroxine | Early morning | Before food per existing prescription\nReview medication reconciliation with treating physician."
+      },
+      "bill": {
+        "id": "INV-JRN-P-019",
+        "patient": "P-019",
+        "title": "Endocrinology care and investigations",
+        "amount": 2450,
+        "status": "Paid",
+        "date": "2026-11-19"
+      },
+      "appointment": {
+        "id": "APT-JRN-P-019",
+        "patient": "P-019",
+        "doctor": "Dr. Rahul Sharma",
+        "doctorId": "demo-doctor",
+        "date": "2026-11-24",
+        "time": "14:00",
+        "type": "Consultation",
+        "status": "Scheduled",
+        "approval": "Confirmed",
+        "notes": "Endocrinology review for Hypothyroidism"
+      },
+      "priorAppointment": {
+        "id": "APT-PRIOR-P-019",
+        "patient": "P-019",
+        "doctor": "Dr. Rahul Sharma",
+        "doctorId": "demo-doctor",
+        "date": "2026-07-16",
+        "time": "12:30",
+        "type": "Prior consultation",
+        "status": "Completed",
+        "approval": "Confirmed",
+        "notes": "Clinical history reviewed for Hypothyroidism"
+      },
+      "priorReport": {
+        "id": "LAB-PRIOR-P-019",
+        "patient": "P-019",
+        "type": "Lab report",
+        "title": "Previous Endocrinology assessment",
+        "date": "2026-07-16",
+        "department": "Endocrinology",
+        "reference": "HB-PR-019",
+        "doctor": "Dr. Rahul Sharma",
+        "author": "HealthBridge Diagnostics",
+        "body": "Review date: 2026-07-16\nClinical history: Hypothyroidism\nSymptoms and follow-up concerns recorded.\nFurther monitoring planned at next visit."
+      },
+      "priorPrescription": {
+        "id": "RX-PRIOR-P-019",
+        "patient": "P-019",
+        "title": "Previous Endocrinology treatment review",
+        "type": "Prescription",
+        "date": "2026-07-16",
+        "doctor": "Dr. Rahul Sharma",
+        "author": "Dr. Rahul Sharma",
+        "department": "Endocrinology",
+        "medications": [
+          {
+            "name": "Levothyroxine",
+            "schedule": "Early morning",
+            "instructions": "Before food per existing prescription",
+            "status": "Active"
+          }
+        ],
+        "body": "Previous visit: 2026-07-16\nCurrent medicines discussed and reconciled.\nNo new prescription authorized by historical entry."
+      }
+    },
+    {
+      "profile": {
+        "id": "P-020",
+        "name": "Farhan Ali",
+        "age": 69,
+        "gender": "Male",
+        "condition": "Sepsis monitoring",
+        "blood": "B+",
+        "phone": "Not recorded",
+        "email": "care.p-020@example.invalid",
+        "address": "Pune, Maharashtra",
+        "notes": "Prior visit 2026-07-13; current care pathway: Internal Medicine",
+        "assignedDoctor": "demo-doctor"
+      },
+      "episode": {
+        "id": "EP-P-020",
+        "patient": "P-020",
+        "stage": "ICU",
+        "visitType": "Emergency",
+        "arrivalAt": "2026-11-15T13:15:00+05:30",
+        "admittedAt": "2026-11-15T16:00:00+05:30",
+        "dischargedAt": null,
+        "doctorId": "demo-doctor",
+        "department": "Internal Medicine",
+        "ward": "ICU",
+        "bed": "ICU-24",
+        "notes": "Sepsis monitoring; assessment and ongoing care documentation",
+        "priorVisitAt": "2026-07-13",
+        "medications": [
+          {
+            "name": "IV antimicrobial therapy",
+            "schedule": "As scheduled",
+            "instructions": "Hospital medication administration record",
+            "status": "Active"
+          }
+        ],
+        "events": [
+          {
+            "at": "2026-07-13T10:30:00+05:30",
+            "title": "Previous consultation",
+            "detail": "Prior internal medicine assessment and follow-up review"
+          },
+          {
+            "at": "2026-11-15T13:15:00+05:30",
+            "title": "Arrival registered",
+            "detail": "Patient details confirmed at reception"
+          },
+          {
+            "at": "2026-11-15T16:00:00+05:30",
+            "title": "Admitted to ICU",
+            "detail": "Care team allocation and initial assessment completed"
+          },
+          {
+            "at": "2026-11-15T16:00:00+05:30",
+            "title": "Clinical review",
+            "detail": "Internal Medicine review; medication and investigations reconciled"
+          }
+        ],
+        "updatedAt": "2026-11-15T13:15:00+05:30",
+        "_source": "training"
+      },
+      "report": {
+        "id": "LAB-JRN-P-020",
+        "patient": "P-020",
+        "type": "Lab report",
+        "title": "Internal Medicine clinical review and investigations",
+        "date": "2026-11-15",
+        "department": "Internal Medicine",
+        "reference": "HB-LAB-020",
+        "doctor": "Dr. Rahul Sharma",
+        "author": "HealthBridge Diagnostics",
+        "body": "Clinical presentation: Sepsis monitoring.\nRecorded assessment: follow-up tests reviewed by care team.\nPrevious consultation: 2026-07-13.\nReview date: 2026-11-15.\nAssessment details: See linked encounter and treating physician notes.\nNo diagnosis generated from this document."
+      },
+      "prescription": {
+        "id": "RX-JRN-P-020",
+        "patient": "P-020",
+        "title": "Sepsis monitoring \u2014 Medication schedule",
+        "type": "Prescription",
+        "date": "2026-11-15",
+        "doctor": "Dr. Rahul Sharma",
+        "author": "Dr. Rahul Sharma",
+        "department": "Internal Medicine",
+        "medications": [
+          {
+            "name": "IV antimicrobial therapy",
+            "schedule": "As scheduled",
+            "instructions": "Hospital medication administration record",
+            "status": "Active"
+          }
+        ],
+        "body": "IV antimicrobial therapy | As scheduled | Hospital medication administration record\nReview medication reconciliation with treating physician."
+      },
+      "bill": {
+        "id": "INV-JRN-P-020",
+        "patient": "P-020",
+        "title": "Internal Medicine care and investigations",
+        "amount": 6370,
+        "status": "Unpaid",
+        "date": "2026-11-15"
+      },
+      "appointment": {
+        "id": "APT-JRN-P-020",
+        "patient": "P-020",
+        "doctor": "Dr. Rahul Sharma",
+        "doctorId": "demo-doctor",
+        "date": "2026-11-25",
+        "time": "15:15",
+        "type": "Follow-up",
+        "status": "Scheduled",
+        "approval": "Confirmed",
+        "notes": "Internal Medicine review for Sepsis monitoring"
+      },
+      "priorAppointment": {
+        "id": "APT-PRIOR-P-020",
+        "patient": "P-020",
+        "doctor": "Dr. Rahul Sharma",
+        "doctorId": "demo-doctor",
+        "date": "2026-07-13",
+        "time": "13:30",
+        "type": "Prior consultation",
+        "status": "Completed",
+        "approval": "Confirmed",
+        "notes": "Clinical history reviewed for Sepsis monitoring"
+      },
+      "priorReport": {
+        "id": "LAB-PRIOR-P-020",
+        "patient": "P-020",
+        "type": "Lab report",
+        "title": "Previous Internal Medicine assessment",
+        "date": "2026-07-13",
+        "department": "Internal Medicine",
+        "reference": "HB-PR-020",
+        "doctor": "Dr. Rahul Sharma",
+        "author": "HealthBridge Diagnostics",
+        "body": "Review date: 2026-07-13\nClinical history: Sepsis monitoring\nSymptoms and follow-up concerns recorded.\nFurther monitoring planned at next visit."
+      },
+      "priorPrescription": {
+        "id": "RX-PRIOR-P-020",
+        "patient": "P-020",
+        "title": "Previous Internal Medicine treatment review",
+        "type": "Prescription",
+        "date": "2026-07-13",
+        "doctor": "Dr. Rahul Sharma",
+        "author": "Dr. Rahul Sharma",
+        "department": "Internal Medicine",
+        "medications": [
+          {
+            "name": "IV antimicrobial therapy",
+            "schedule": "As scheduled",
+            "instructions": "Hospital medication administration record",
+            "status": "Active"
+          }
+        ],
+        "body": "Previous visit: 2026-07-13\nCurrent medicines discussed and reconciled.\nNo new prescription authorized by historical entry."
+      }
+    },
+    {
+      "profile": {
+        "id": "P-021",
+        "name": "Pooja Deshmukh",
+        "age": 33,
+        "gender": "Female",
+        "condition": "Postpartum follow-up",
+        "blood": "A+",
+        "phone": "Not recorded",
+        "email": "care.p-021@example.invalid",
+        "address": "Pune, Maharashtra",
+        "notes": "Prior visit 2026-07-10; current care pathway: Obstetrics",
+        "assignedDoctor": "demo-doctor"
+      },
+      "episode": {
+        "id": "EP-P-021",
+        "patient": "P-021",
+        "stage": "Discharged",
+        "visitType": "Inpatient",
+        "arrivalAt": "2026-11-14T14:30:00+05:30",
+        "admittedAt": "2026-11-14T10:00:00+05:30",
+        "dischargedAt": "2026-11-18T15:45:00+05:30",
+        "doctorId": "demo-doctor",
+        "department": "Obstetrics",
+        "ward": "\u2014",
+        "bed": "",
+        "notes": "Postpartum follow-up; assessment and ongoing care documentation",
+        "priorVisitAt": "2026-07-10",
+        "medications": [
+          {
+            "name": "Iron / calcium supplement",
+            "schedule": "Morning / Night",
+            "instructions": "Per discharge order",
+            "status": "Completed"
+          }
+        ],
+        "events": [
+          {
+            "at": "2026-07-10T10:30:00+05:30",
+            "title": "Previous consultation",
+            "detail": "Prior obstetrics assessment and follow-up review"
+          },
+          {
+            "at": "2026-11-14T14:30:00+05:30",
+            "title": "Arrival registered",
+            "detail": "Patient details confirmed at reception"
+          },
+          {
+            "at": "2026-11-14T10:00:00+05:30",
+            "title": "Admitted to hospital",
+            "detail": "Care team allocation and initial assessment completed"
+          },
+          {
+            "at": "2026-11-14T16:00:00+05:30",
+            "title": "Clinical review",
+            "detail": "Obstetrics review; medication and investigations reconciled"
+          },
+          {
+            "at": "2026-11-18T15:45:00+05:30",
+            "title": "Discharged",
+            "detail": "Discharge plan issued; follow-up advised"
+          }
+        ],
+        "updatedAt": "2026-11-14T14:30:00+05:30",
+        "_source": "training"
+      },
+      "report": {
+        "id": "LAB-JRN-P-021",
+        "patient": "P-021",
+        "type": "Lab report",
+        "title": "Obstetrics clinical review and investigations",
+        "date": "2026-11-14",
+        "department": "Obstetrics",
+        "reference": "HB-LAB-021",
+        "doctor": "Dr. Rahul Sharma",
+        "author": "HealthBridge Diagnostics",
+        "body": "Clinical presentation: Postpartum follow-up.\nRecorded assessment: follow-up tests reviewed by care team.\nPrevious consultation: 2026-07-10.\nReview date: 2026-11-14.\nAssessment details: See linked encounter and treating physician notes.\nNo diagnosis generated from this document."
+      },
+      "prescription": {
+        "id": "RX-JRN-P-021",
+        "patient": "P-021",
+        "title": "Postpartum follow-up \u2014 Medication schedule",
+        "type": "Prescription",
+        "date": "2026-11-14",
+        "doctor": "Dr. Rahul Sharma",
+        "author": "Dr. Rahul Sharma",
+        "department": "Obstetrics",
+        "medications": [
+          {
+            "name": "Iron / calcium supplement",
+            "schedule": "Morning / Night",
+            "instructions": "Per discharge order",
+            "status": "Completed"
+          }
+        ],
+        "body": "Iron / calcium supplement | Morning / Night | Per discharge order\nReview medication reconciliation with treating physician."
+      },
+      "bill": {
+        "id": "INV-JRN-P-021",
+        "patient": "P-021",
+        "title": "Obstetrics care and investigations",
+        "amount": 850,
+        "status": "Unpaid",
+        "date": "2026-11-14"
+      },
+      "appointment": {
+        "id": "APT-JRN-P-021",
+        "patient": "P-021",
+        "doctor": "Dr. Rahul Sharma",
+        "doctorId": "demo-doctor",
+        "date": "2026-11-14",
+        "time": "09:30",
+        "type": "Follow-up",
+        "status": "Completed",
+        "approval": "Confirmed",
+        "notes": "Obstetrics review for Postpartum follow-up"
+      },
+      "priorAppointment": {
+        "id": "APT-PRIOR-P-021",
+        "patient": "P-021",
+        "doctor": "Dr. Rahul Sharma",
+        "doctorId": "demo-doctor",
+        "date": "2026-07-10",
+        "time": "14:30",
+        "type": "Prior consultation",
+        "status": "Completed",
+        "approval": "Confirmed",
+        "notes": "Clinical history reviewed for Postpartum follow-up"
+      },
+      "priorReport": {
+        "id": "LAB-PRIOR-P-021",
+        "patient": "P-021",
+        "type": "Lab report",
+        "title": "Previous Obstetrics assessment",
+        "date": "2026-07-10",
+        "department": "Obstetrics",
+        "reference": "HB-PR-021",
+        "doctor": "Dr. Rahul Sharma",
+        "author": "HealthBridge Diagnostics",
+        "body": "Review date: 2026-07-10\nClinical history: Postpartum follow-up\nSymptoms and follow-up concerns recorded.\nFurther monitoring planned at next visit."
+      },
+      "priorPrescription": {
+        "id": "RX-PRIOR-P-021",
+        "patient": "P-021",
+        "title": "Previous Obstetrics treatment review",
+        "type": "Prescription",
+        "date": "2026-07-10",
+        "doctor": "Dr. Rahul Sharma",
+        "author": "Dr. Rahul Sharma",
+        "department": "Obstetrics",
+        "medications": [
+          {
+            "name": "Iron / calcium supplement",
+            "schedule": "Morning / Night",
+            "instructions": "Per discharge order",
+            "status": "Completed"
+          }
+        ],
+        "body": "Previous visit: 2026-07-10\nCurrent medicines discussed and reconciled.\nNo new prescription authorized by historical entry."
+      }
+    },
+    {
+      "profile": {
+        "id": "P-022",
+        "name": "Arjun Malhotra",
+        "age": 41,
+        "gender": "Male",
+        "condition": "Hypertension",
+        "blood": "AB+",
+        "phone": "Not recorded",
+        "email": "care.p-022@example.invalid",
+        "address": "Pune, Maharashtra",
+        "notes": "Prior visit 2026-07-07; current care pathway: Cardiology",
+        "assignedDoctor": "doctor-cardio"
+      },
+      "episode": {
+        "id": "EP-P-022",
+        "patient": "P-022",
+        "stage": "Admitted",
+        "visitType": "Inpatient",
+        "arrivalAt": "2026-11-18T15:45:00+05:30",
+        "admittedAt": "2026-11-18T11:00:00+05:30",
+        "dischargedAt": null,
+        "doctorId": "doctor-cardio",
+        "department": "Cardiology",
+        "ward": "General ward",
+        "bed": "WARD-36",
+        "notes": "Hypertension; assessment and ongoing care documentation",
+        "priorVisitAt": "2026-07-07",
+        "medications": [
+          {
+            "name": "Amlodipine",
+            "schedule": "Morning",
+            "instructions": "Per current prescription",
+            "status": "Active"
+          }
+        ],
+        "events": [
+          {
+            "at": "2026-07-07T10:30:00+05:30",
+            "title": "Previous consultation",
+            "detail": "Prior cardiology assessment and follow-up review"
+          },
+          {
+            "at": "2026-11-18T15:45:00+05:30",
+            "title": "Arrival registered",
+            "detail": "Patient details confirmed at reception"
+          },
+          {
+            "at": "2026-11-18T11:00:00+05:30",
+            "title": "Admitted to hospital",
+            "detail": "Care team allocation and initial assessment completed"
+          },
+          {
+            "at": "2026-11-18T16:00:00+05:30",
+            "title": "Clinical review",
+            "detail": "Cardiology review; medication and investigations reconciled"
+          }
+        ],
+        "updatedAt": "2026-11-18T15:45:00+05:30",
+        "_source": "training"
+      },
+      "report": {
+        "id": "LAB-JRN-P-022",
+        "patient": "P-022",
+        "type": "Lab report",
+        "title": "Cardiology clinical review and investigations",
+        "date": "2026-11-18",
+        "department": "Cardiology",
+        "reference": "HB-LAB-022",
+        "doctor": "Dr. Sameer Kulkarni",
+        "author": "HealthBridge Diagnostics",
+        "body": "Clinical presentation: Hypertension.\nRecorded assessment: follow-up tests reviewed by care team.\nPrevious consultation: 2026-07-07.\nReview date: 2026-11-18.\nAssessment details: See linked encounter and treating physician notes.\nNo diagnosis generated from this document."
+      },
+      "prescription": {
+        "id": "RX-JRN-P-022",
+        "patient": "P-022",
+        "title": "Hypertension \u2014 Medication schedule",
+        "type": "Prescription",
+        "date": "2026-11-18",
+        "doctor": "Dr. Sameer Kulkarni",
+        "author": "Dr. Sameer Kulkarni",
+        "department": "Cardiology",
+        "medications": [
+          {
+            "name": "Amlodipine",
+            "schedule": "Morning",
+            "instructions": "Per current prescription",
+            "status": "Active"
+          }
+        ],
+        "body": "Amlodipine | Morning | Per current prescription\nReview medication reconciliation with treating physician."
+      },
+      "bill": {
+        "id": "INV-JRN-P-022",
+        "patient": "P-022",
+        "title": "Cardiology care and investigations",
+        "amount": 4770,
+        "status": "Paid",
+        "date": "2026-11-18"
+      },
+      "appointment": {
+        "id": "APT-JRN-P-022",
+        "patient": "P-022",
+        "doctor": "Dr. Sameer Kulkarni",
+        "doctorId": "doctor-cardio",
+        "date": "2026-11-27",
+        "time": "10:45",
+        "type": "Follow-up",
+        "status": "Scheduled",
+        "approval": "Confirmed",
+        "notes": "Cardiology review for Hypertension"
+      },
+      "priorAppointment": {
+        "id": "APT-PRIOR-P-022",
+        "patient": "P-022",
+        "doctor": "Dr. Sameer Kulkarni",
+        "doctorId": "doctor-cardio",
+        "date": "2026-07-07",
+        "time": "10:30",
+        "type": "Prior consultation",
+        "status": "Completed",
+        "approval": "Confirmed",
+        "notes": "Clinical history reviewed for Hypertension"
+      },
+      "priorReport": {
+        "id": "LAB-PRIOR-P-022",
+        "patient": "P-022",
+        "type": "Lab report",
+        "title": "Previous Cardiology assessment",
+        "date": "2026-07-07",
+        "department": "Cardiology",
+        "reference": "HB-PR-022",
+        "doctor": "Dr. Sameer Kulkarni",
+        "author": "HealthBridge Diagnostics",
+        "body": "Review date: 2026-07-07\nClinical history: Hypertension\nSymptoms and follow-up concerns recorded.\nFurther monitoring planned at next visit."
+      },
+      "priorPrescription": {
+        "id": "RX-PRIOR-P-022",
+        "patient": "P-022",
+        "title": "Previous Cardiology treatment review",
+        "type": "Prescription",
+        "date": "2026-07-07",
+        "doctor": "Dr. Sameer Kulkarni",
+        "author": "Dr. Sameer Kulkarni",
+        "department": "Cardiology",
+        "medications": [
+          {
+            "name": "Amlodipine",
+            "schedule": "Morning",
+            "instructions": "Per current prescription",
+            "status": "Active"
+          }
+        ],
+        "body": "Previous visit: 2026-07-07\nCurrent medicines discussed and reconciled.\nNo new prescription authorized by historical entry."
+      }
+    },
+    {
+      "profile": {
+        "id": "P-023",
+        "name": "Kriti Rao",
+        "age": 26,
+        "gender": "Female",
+        "condition": "Asthma",
+        "blood": "O+",
+        "phone": "Not recorded",
+        "email": "care.p-023@example.invalid",
+        "address": "Pune, Maharashtra",
+        "notes": "Prior visit 2026-07-04; current care pathway: Pulmonology",
+        "assignedDoctor": "doctor-pulmo"
+      },
+      "episode": {
+        "id": "EP-P-023",
+        "patient": "P-023",
+        "stage": "Arrived",
+        "visitType": "Outpatient",
+        "arrivalAt": "2026-11-19T08:00:00+05:30",
+        "admittedAt": null,
+        "dischargedAt": null,
+        "doctorId": "doctor-pulmo",
+        "department": "Pulmonology",
+        "ward": "\u2014",
+        "bed": "",
+        "notes": "Asthma; assessment and ongoing care documentation",
+        "priorVisitAt": "2026-07-04",
+        "medications": [
+          {
+            "name": "Inhaler",
+            "schedule": "Morning / Evening",
+            "instructions": "Per respiratory plan",
+            "status": "Active"
+          }
+        ],
+        "events": [
+          {
+            "at": "2026-07-04T10:30:00+05:30",
+            "title": "Previous consultation",
+            "detail": "Prior pulmonology assessment and follow-up review"
+          },
+          {
+            "at": "2026-11-19T08:00:00+05:30",
+            "title": "Arrival registered",
+            "detail": "Patient details confirmed at reception"
+          },
+          {
+            "at": "2026-11-19T16:00:00+05:30",
+            "title": "Clinical review",
+            "detail": "Pulmonology review; medication and investigations reconciled"
+          }
+        ],
+        "updatedAt": "2026-11-19T08:00:00+05:30",
+        "_source": "training"
+      },
+      "report": {
+        "id": "LAB-JRN-P-023",
+        "patient": "P-023",
+        "type": "Lab report",
+        "title": "Pulmonology clinical review and investigations",
+        "date": "2026-11-19",
+        "department": "Pulmonology",
+        "reference": "HB-LAB-023",
+        "doctor": "Dr. Nisha Shah",
+        "author": "HealthBridge Diagnostics",
+        "body": "Clinical presentation: Asthma.\nRecorded assessment: follow-up tests reviewed by care team.\nPrevious consultation: 2026-07-04.\nReview date: 2026-11-19.\nAssessment details: See linked encounter and treating physician notes.\nNo diagnosis generated from this document."
+      },
+      "prescription": {
+        "id": "RX-JRN-P-023",
+        "patient": "P-023",
+        "title": "Asthma \u2014 Medication schedule",
+        "type": "Prescription",
+        "date": "2026-11-19",
+        "doctor": "Dr. Nisha Shah",
+        "author": "Dr. Nisha Shah",
+        "department": "Pulmonology",
+        "medications": [
+          {
+            "name": "Inhaler",
+            "schedule": "Morning / Evening",
+            "instructions": "Per respiratory plan",
+            "status": "Active"
+          }
+        ],
+        "body": "Inhaler | Morning / Evening | Per respiratory plan\nReview medication reconciliation with treating physician."
+      },
+      "bill": {
+        "id": "INV-JRN-P-023",
+        "patient": "P-023",
+        "title": "Pulmonology care and investigations",
+        "amount": 1490,
+        "status": "Unpaid",
+        "date": "2026-11-19"
+      },
+      "appointment": {
+        "id": "APT-JRN-P-023",
+        "patient": "P-023",
+        "doctor": "Dr. Nisha Shah",
+        "doctorId": "doctor-pulmo",
+        "date": "2026-11-20",
+        "time": "11:00",
+        "type": "Consultation",
+        "status": "Scheduled",
+        "approval": "Confirmed",
+        "notes": "Pulmonology review for Asthma"
+      },
+      "priorAppointment": {
+        "id": "APT-PRIOR-P-023",
+        "patient": "P-023",
+        "doctor": "Dr. Nisha Shah",
+        "doctorId": "doctor-pulmo",
+        "date": "2026-07-04",
+        "time": "11:30",
+        "type": "Prior consultation",
+        "status": "Completed",
+        "approval": "Confirmed",
+        "notes": "Clinical history reviewed for Asthma"
+      },
+      "priorReport": {
+        "id": "LAB-PRIOR-P-023",
+        "patient": "P-023",
+        "type": "Lab report",
+        "title": "Previous Pulmonology assessment",
+        "date": "2026-07-04",
+        "department": "Pulmonology",
+        "reference": "HB-PR-023",
+        "doctor": "Dr. Nisha Shah",
+        "author": "HealthBridge Diagnostics",
+        "body": "Review date: 2026-07-04\nClinical history: Asthma\nSymptoms and follow-up concerns recorded.\nFurther monitoring planned at next visit."
+      },
+      "priorPrescription": {
+        "id": "RX-PRIOR-P-023",
+        "patient": "P-023",
+        "title": "Previous Pulmonology treatment review",
+        "type": "Prescription",
+        "date": "2026-07-04",
+        "doctor": "Dr. Nisha Shah",
+        "author": "Dr. Nisha Shah",
+        "department": "Pulmonology",
+        "medications": [
+          {
+            "name": "Inhaler",
+            "schedule": "Morning / Evening",
+            "instructions": "Per respiratory plan",
+            "status": "Active"
+          }
+        ],
+        "body": "Previous visit: 2026-07-04\nCurrent medicines discussed and reconciled.\nNo new prescription authorized by historical entry."
+      }
+    },
+    {
+      "profile": {
+        "id": "P-024",
+        "name": "Vivek Bhat",
+        "age": 59,
+        "gender": "Male",
+        "condition": "Knee osteoarthritis",
+        "blood": "B+",
+        "phone": "Not recorded",
+        "email": "care.p-024@example.invalid",
+        "address": "Pune, Maharashtra",
+        "notes": "Prior visit 2026-07-01; current care pathway: Orthopedics",
+        "assignedDoctor": "doctor-ortho"
+      },
+      "episode": {
+        "id": "EP-P-024",
+        "patient": "P-024",
+        "stage": "Discharged",
+        "visitType": "Inpatient",
+        "arrivalAt": "2026-11-16T09:15:00+05:30",
+        "admittedAt": "2026-11-16T13:00:00+05:30",
+        "dischargedAt": "2026-11-18T15:45:00+05:30",
+        "doctorId": "doctor-ortho",
+        "department": "Orthopedics",
+        "ward": "\u2014",
+        "bed": "",
+        "notes": "Knee osteoarthritis; assessment and ongoing care documentation",
+        "priorVisitAt": "2026-07-01",
+        "medications": [
+          {
+            "name": "Topical analgesic",
+            "schedule": "Evening",
+            "instructions": "Per discharge order",
+            "status": "Completed"
+          }
+        ],
+        "events": [
+          {
+            "at": "2026-07-01T10:30:00+05:30",
+            "title": "Previous consultation",
+            "detail": "Prior orthopedics assessment and follow-up review"
+          },
+          {
+            "at": "2026-11-16T09:15:00+05:30",
+            "title": "Arrival registered",
+            "detail": "Patient details confirmed at reception"
+          },
+          {
+            "at": "2026-11-16T13:00:00+05:30",
+            "title": "Admitted to hospital",
+            "detail": "Care team allocation and initial assessment completed"
+          },
+          {
+            "at": "2026-11-16T16:00:00+05:30",
+            "title": "Clinical review",
+            "detail": "Orthopedics review; medication and investigations reconciled"
+          },
+          {
+            "at": "2026-11-18T15:45:00+05:30",
+            "title": "Discharged",
+            "detail": "Discharge plan issued; follow-up advised"
+          }
+        ],
+        "updatedAt": "2026-11-16T09:15:00+05:30",
+        "_source": "training"
+      },
+      "report": {
+        "id": "LAB-JRN-P-024",
+        "patient": "P-024",
+        "type": "Lab report",
+        "title": "Orthopedics clinical review and investigations",
+        "date": "2026-11-16",
+        "department": "Orthopedics",
+        "reference": "HB-LAB-024",
+        "doctor": "Dr. Ritesh Patil",
+        "author": "HealthBridge Diagnostics",
+        "body": "Clinical presentation: Knee osteoarthritis.\nRecorded assessment: follow-up tests reviewed by care team.\nPrevious consultation: 2026-07-01.\nReview date: 2026-11-16.\nAssessment details: See linked encounter and treating physician notes.\nNo diagnosis generated from this document."
+      },
+      "prescription": {
+        "id": "RX-JRN-P-024",
+        "patient": "P-024",
+        "title": "Knee osteoarthritis \u2014 Medication schedule",
+        "type": "Prescription",
+        "date": "2026-11-16",
+        "doctor": "Dr. Ritesh Patil",
+        "author": "Dr. Ritesh Patil",
+        "department": "Orthopedics",
+        "medications": [
+          {
+            "name": "Topical analgesic",
+            "schedule": "Evening",
+            "instructions": "Per discharge order",
+            "status": "Completed"
+          }
+        ],
+        "body": "Topical analgesic | Evening | Per discharge order\nReview medication reconciliation with treating physician."
+      },
+      "bill": {
+        "id": "INV-JRN-P-024",
+        "patient": "P-024",
+        "title": "Orthopedics care and investigations",
+        "amount": 1810,
+        "status": "Unpaid",
+        "date": "2026-11-16"
+      },
+      "appointment": {
+        "id": "APT-JRN-P-024",
+        "patient": "P-024",
+        "doctor": "Dr. Ritesh Patil",
+        "doctorId": "doctor-ortho",
+        "date": "2026-11-16",
+        "time": "12:15",
+        "type": "Follow-up",
+        "status": "Completed",
+        "approval": "Confirmed",
+        "notes": "Orthopedics review for Knee osteoarthritis"
+      },
+      "priorAppointment": {
+        "id": "APT-PRIOR-P-024",
+        "patient": "P-024",
+        "doctor": "Dr. Ritesh Patil",
+        "doctorId": "doctor-ortho",
+        "date": "2026-07-01",
+        "time": "12:30",
+        "type": "Prior consultation",
+        "status": "Completed",
+        "approval": "Confirmed",
+        "notes": "Clinical history reviewed for Knee osteoarthritis"
+      },
+      "priorReport": {
+        "id": "LAB-PRIOR-P-024",
+        "patient": "P-024",
+        "type": "Lab report",
+        "title": "Previous Orthopedics assessment",
+        "date": "2026-07-01",
+        "department": "Orthopedics",
+        "reference": "HB-PR-024",
+        "doctor": "Dr. Ritesh Patil",
+        "author": "HealthBridge Diagnostics",
+        "body": "Review date: 2026-07-01\nClinical history: Knee osteoarthritis\nSymptoms and follow-up concerns recorded.\nFurther monitoring planned at next visit."
+      },
+      "priorPrescription": {
+        "id": "RX-PRIOR-P-024",
+        "patient": "P-024",
+        "title": "Previous Orthopedics treatment review",
+        "type": "Prescription",
+        "date": "2026-07-01",
+        "doctor": "Dr. Ritesh Patil",
+        "author": "Dr. Ritesh Patil",
+        "department": "Orthopedics",
+        "medications": [
+          {
+            "name": "Topical analgesic",
+            "schedule": "Evening",
+            "instructions": "Per discharge order",
+            "status": "Completed"
+          }
+        ],
+        "body": "Previous visit: 2026-07-01\nCurrent medicines discussed and reconciled.\nNo new prescription authorized by historical entry."
+      }
+    }
+  ]
+}

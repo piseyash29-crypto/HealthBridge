@@ -1,0 +1,12 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> healthbridge-fullstack@0.1.0 test
+> node tests/continuity.mjs && node tests/backend-local.mjs && node tests/http.mjs
+
+(node:18) ExperimentalWarning: stripTypeScriptTypes is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+PASS: 57 API and persistence checks. Authentication, role escalation, patient isolation, doctor approval, appointments, stale writes, consent, FHIR matching/duplicates, care loop, notifications, summaries, uploads, CSRF and reopen persistence.
+(node:30) ExperimentalWarning: stripTypeScriptTypes is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+PASS: migrations, authenticated registration, anti-escalation, doctor approval, patient isolation, assignments, SQL slot conflicts, optimistic concurrency, completion timeline, protected uploads, sharing, file validation, deletion, CSRF, assistant history and range validation.
+PASS: local HTTP server, landing, trusted identity boundary, login failure/success, cookie flags, patient isolation, logout and invalidated session.

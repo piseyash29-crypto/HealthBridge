@@ -1,0 +1,53 @@
+{
+  "models": [
+    {
+      "id": "efficientnet_b0",
+      "name": "EfficientNet-B0 \u00b7 PyTorch",
+      "format": "pytorch",
+      "file": "models/EfficientNet_092843_17102024_train_0.0044_val_0.0401.pth",
+      "version": "092843-17102024",
+      "scope": "EXPERIMENTAL 2D MRI slice classification. Preprocessing recipe not verified against original training code; predictions not clinically validated.",
+      "labels": [
+        "VeryMildDemented",
+        "NonDemented",
+        "ModerateDemented",
+        "MildDemented"
+      ],
+      "preprocessing_confirmed": true,
+      "output_type": "logits",
+      "preprocessing": {
+        "size": [
+          224,
+          224
+        ],
+        "color_mode": "RGB",
+        "layout": "NCHW",
+        "scale": 0.00392156862745098,
+        "mean": [
+          0,
+          0,
+          0
+        ],
+        "std": [
+          1,
+          1,
+          1
+        ],
+        "interpolation": "bilinear",
+        "exif_transpose": false
+      },
+      "purpose": "experimental_alzheimer_mri_classifier"
+    },
+    {
+      "id": "densenet121",
+      "name": "DenseNet121 \u00b7 pretrained backbone (not MRI-trained)",
+      "format": "pytorch",
+      "file": "models/densenet121-imagenet.pth",
+      "version": "torchvision-imagenet-1000",
+      "scope": "Standard ImageNet 1000-class pretrained backbone; not trained for Alzheimer MRI classification. Fine-tuning required before predictions.",
+      "labels": [],
+      "preprocessing_confirmed": false,
+      "purpose": "pretrained_backbone_only"
+    }
+  ]
+}
